@@ -7,12 +7,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MESH/> .
-@prefix pgxo: <http://pgxo.loria.fr/> .
+@prefix pgxo: <http://ns.inria.fr/pgxo/> .
 @prefix prov: <http://www.w3.org/ns/prov-o#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dbsnp: <http://bio2rdf.org/dbsnp:> .
 @prefix loinc: <http://purl.bioontology.org/ontology/LNC/> .
-@prefix pgxlod: <http://pgxlod.loria.fr/resource/> .
+@prefix pgxlod: <http://ns.inria.fr/pgxlod/resource/> .
 @prefix icd10cm: <http://purl.bioontology.org/ontology/ICD10CM/> .
 @prefix pharmgkb: <http://bio2rdf.org/pharmgkb:> .
 @base <http://www.w3.org/2002/07/owl#> .
@@ -33,11 +33,11 @@ ro:BFO_0000051 rdf:type owl:AnnotationProperty .
 ro:RO_0002502 rdf:type owl:AnnotationProperty .
 
 
-###  http://pgxo.loria.fr/causes
+###  http://ns.inria.fr/pgxo/causes
 pgxo:causes rdf:type owl:AnnotationProperty .
 
 
-###  http://pgxo.loria.fr/isCausedBy
+###  http://ns.inria.fr/pgxo/isCausedBy
 pgxo:isCausedBy rdf:type owl:AnnotationProperty .
 
 
@@ -49,11 +49,11 @@ dul:hasDataValue rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://pgxo.loria.fr/qualifiedProxy
+###  http://ns.inria.fr/pgxo/qualifiedProxy
 pgxo:qualifiedProxy rdf:type owl:ObjectProperty .
 
 
-###  http://pgxo.loria.fr/qualifiedVariation
+###  http://ns.inria.fr/pgxo/qualifiedVariation
 pgxo:qualifiedVariation rdf:type owl:ObjectProperty .
 
 
@@ -156,27 +156,27 @@ atc:C10AA rdf:type owl:Class ;
                rdfs:label "thiopurine" .
 
 
-###  http://pgxo.loria.fr/Drug
+###  http://ns.inria.fr/pgxo/Drug
 pgxo:Drug rdf:type owl:Class .
 
 
-###  http://pgxo.loria.fr/Gene
+###  http://ns.inria.fr/pgxo/Gene
 pgxo:Gene rdf:type owl:Class .
 
 
-###  http://pgxo.loria.fr/Haplotype
+###  http://ns.inria.fr/pgxo/Haplotype
 pgxo:Haplotype rdf:type owl:Class .
 
 
-###  http://pgxo.loria.fr/PharmacogenomicRelationship
+###  http://ns.inria.fr/pgxo/PharmacogenomicRelationship
 pgxo:PharmacogenomicRelationship rdf:type owl:Class .
 
 
-###  http://pgxo.loria.fr/Phenotype
+###  http://ns.inria.fr/pgxo/Phenotype
 pgxo:Phenotype rdf:type owl:Class .
 
 
-###  http://pgxo.loria.fr/Variant
+###  http://ns.inria.fr/pgxo/Variant
 pgxo:Variant rdf:type owl:Class .
 
 
@@ -353,102 +353,102 @@ pharmgkb:PA451906 rdf:type owl:NamedIndividual ,
                   rdfs:label "warfarin" .
 
 
-###  http://pgxlod.loria.fr/resource/_1e_quality2
-<http://pgxlod.loria.fr/resource/_1e_quality2> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/_1e_quality2
+<http://ns.inria.fr/pgxlod/resource/_1e_quality2> rdf:type owl:NamedIndividual ,
                                                dul:Quality ;
-                                      dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                                      dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                                       dul:hasDataValue "1 A10^-8" .
 
 
-###  http://pgxlod.loria.fr/resource/_1j_quality2
-<http://pgxlod.loria.fr/resource/_1j_quality2> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/_1j_quality2
+<http://ns.inria.fr/pgxlod/resource/_1j_quality2> rdf:type owl:NamedIndividual ,
                                                dul:Quality ;
-                                      dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                                      dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                                       dul:hasDataValue "3.18 10^-9" .
 
 
-###  http://pgxlod.loria.fr/resource/emerge_network_cohort
-<http://pgxlod.loria.fr/resource/emerge_network_cohort> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/emerge_network_cohort
+<http://ns.inria.fr/pgxlod/resource/emerge_network_cohort> rdf:type owl:NamedIndividual ,
                                                         <http://www.w3.org/ns/prov#Entity> ;
                                                <http://www.w3.org/ns/prov#wasAttributedTo> pgxlod:emerge_network .
 
 
-###  http://pgxlod.loria.fr/resource/hazard_ratio
-<http://pgxlod.loria.fr/resource/hazard_ratio> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/hazard_ratio
+<http://ns.inria.fr/pgxlod/resource/hazard_ratio> rdf:type owl:NamedIndividual ,
                                                dul:Quality .
 
 
-###  http://pgxlod.loria.fr/resource/odds_ratio
-<http://pgxlod.loria.fr/resource/odds_ratio> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/odds_ratio
+<http://ns.inria.fr/pgxlod/resource/odds_ratio> rdf:type owl:NamedIndividual ,
                                              dul:Quality .
 
 
-###  http://pgxlod.loria.fr/resource/p-value
-<http://pgxlod.loria.fr/resource/p-value> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/p-value
+<http://ns.inria.fr/pgxlod/resource/p-value> rdf:type owl:NamedIndividual ,
                                           dul:Quality .
 
 
-###  http://pgxlod.loria.fr/resource/serum_creatinine_level
-<http://pgxlod.loria.fr/resource/serum_creatinine_level> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/serum_creatinine_level
+<http://ns.inria.fr/pgxlod/resource/serum_creatinine_level> rdf:type owl:NamedIndividual ,
                                                          pgxo:Phenotype ;
                                                 pgxo:isCausedBy pgxlod:f_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/thiopurine
-<http://pgxlod.loria.fr/resource/thiopurine> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/thiopurine
+<http://ns.inria.fr/pgxlod/resource/thiopurine> rdf:type owl:NamedIndividual ,
                                                       pgxo:Drug ,
                                              <http://bio2rdf.org/chebi:35666> ;
                                     pgxo:causes pgxlod:a_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/vanderbilt_university_school_of_medicine
-<http://pgxlod.loria.fr/resource/vanderbilt_university_school_of_medicine> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/vanderbilt_university_school_of_medicine
+<http://ns.inria.fr/pgxlod/resource/vanderbilt_university_school_of_medicine> rdf:type owl:NamedIndividual ,
                                                                            <http://www.w3.org/ns/prov#Organization> .
 
 
-###  http://pgxlod.loria.fr/resource/1e_mosley_analysis_1
-<http://pgxlod.loria.fr/resource/1e_mosley_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1e_mosley_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1e_mosley_analysis_1> rdf:type owl:NamedIndividual ,
                                                        <http://www.w3.org/ns/prov#Activity> ;
-                                              <http://www.w3.org/ns/prov#used> <http://pgxlod.loria.fr/resource/emerge_network_cohort> ;
+                                              <http://www.w3.org/ns/prov#used> <http://ns.inria.fr/pgxlod/resource/emerge_network_cohort> ;
                                               <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:logistic_regression .
 
 
-###  http://pgxlod.loria.fr/resource/1f_driest_analysis_1
-<http://pgxlod.loria.fr/resource/1f_driest_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1f_driest_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1f_driest_analysis_1> rdf:type owl:NamedIndividual ,
                                                        <http://www.w3.org/ns/prov#Activity> ;
                                               <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                                               <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/1g_wells_analysis_1
-<http://pgxlod.loria.fr/resource/1g_wells_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1g_wells_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1g_wells_analysis_1> rdf:type owl:NamedIndividual ,
                                                       <http://www.w3.org/ns/prov#Activity> ;
                                              <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                                              <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/1h_kawai_analysis_1
-<http://pgxlod.loria.fr/resource/1h_kawai_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1h_kawai_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1h_kawai_analysis_1> rdf:type owl:NamedIndividual ,
                                                       <http://www.w3.org/ns/prov#Activity> ;
                                              <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                                              <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:logistic_regression .
 
 
-###  http://pgxlod.loria.fr/resource/1i_feng_analysis_1
-<http://pgxlod.loria.fr/resource/1i_feng_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1i_feng_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1i_feng_analysis_1> rdf:type owl:NamedIndividual ,
                                                      <http://www.w3.org/ns/prov#Activity> ;
                                             <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                                             <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/1j_karnes_analysis_1
-<http://pgxlod.loria.fr/resource/1j_karnes_analysis_1> rdf:type owl:NamedIndividual ,
+###  http://ns.inria.fr/pgxlod/resource/1j_karnes_analysis_1
+<http://ns.inria.fr/pgxlod/resource/1j_karnes_analysis_1> rdf:type owl:NamedIndividual ,
                                                        <http://www.w3.org/ns/prov#Activity> ;
                                               <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                                               <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:logistic_regression .
 
 
-###  http://pgxlod.loria.fr/resource/TPMT_very_high_activity
+###  http://ns.inria.fr/pgxlod/resource/TPMT_very_high_activity
 pgxlod:TPMT_very_high_activity rdf:type owl:NamedIndividual ,
                                         pgxo:Phenotype ;
                                pgxo:qualifiedProxy pgxlod:_1a_proxy ;
@@ -457,7 +457,7 @@ pgxlod:TPMT_very_high_activity rdf:type owl:NamedIndividual ,
                                rdfs:label "TPMT very high activity" .
 
 
-###  http://pgxlod.loria.fr/resource/_1a_activity_neuraz
+###  http://ns.inria.fr/pgxlod/resource/_1a_activity_neuraz
 pgxlod:_1a_activity_neuraz rdf:type owl:NamedIndividual ,
                                     <http://www.w3.org/ns/prov#Generation> ;
                            dul:hasQuality pgxlod:_1a_quality ;
@@ -465,28 +465,28 @@ pgxlod:_1a_activity_neuraz rdf:type owl:NamedIndividual ,
                            <http://www.w3.org/ns/prov#influencer> pgxlod:hegp_clinical_data_warehouse .
 
 
-###  http://pgxlod.loria.fr/resource/_1a_proxy
+###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
 pgxlod:_1a_proxy rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/ns/prov#Entity> ;
                  pgxo:qualifiedVariation pharmgkb:PA165819268 ;
                  <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1a_proxy_activity .
 
 
-###  http://pgxlod.loria.fr/resource/_1a_proxy_activity
+###  http://ns.inria.fr/pgxlod/resource/_1a_proxy_activity
 pgxlod:_1a_proxy_activity rdf:type owl:NamedIndividual ,
                                    <http://www.w3.org/ns/prov#Generation> ;
                           <http://www.w3.org/ns/prov#activity> pgxlod:a_proxy_manual_extraction ;
                           <http://www.w3.org/ns/prov#influencer> pgxlod:thiopurine_cpic_clinical_guidelines .
 
 
-###  http://pgxlod.loria.fr/resource/_1a_quality
+###  http://ns.inria.fr/pgxlod/resource/_1a_quality
 pgxlod:_1a_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue 0.0004 .
 
 
-###  http://pgxlod.loria.fr/resource/_1b_activity
+###  http://ns.inria.fr/pgxlod/resource/_1b_activity
 pgxlod:_1b_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1b_quality ;
@@ -494,14 +494,14 @@ pgxlod:_1b_activity rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1b_quality
+###  http://ns.inria.fr/pgxlod/resource/_1b_quality
 pgxlod:_1b_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue "1.4 10^-11" .
 
 
-###  http://pgxlod.loria.fr/resource/_1c_activity
+###  http://ns.inria.fr/pgxlod/resource/_1c_activity
 pgxlod:_1c_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1c_quality ;
@@ -509,14 +509,14 @@ pgxlod:_1c_activity rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1c_quality
+###  http://ns.inria.fr/pgxlod/resource/_1c_quality
 pgxlod:_1c_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/hazard_ratio> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/hazard_ratio> ;
                    dul:hasDataValue "1.54 (95%)" .
 
 
-###  http://pgxlod.loria.fr/resource/_1d_activity
+###  http://ns.inria.fr/pgxlod/resource/_1d_activity
 pgxlod:_1d_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1d_quality ;
@@ -524,129 +524,129 @@ pgxlod:_1d_activity rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1d_quality
+###  http://ns.inria.fr/pgxlod/resource/_1d_quality
 pgxlod:_1d_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue "7.15 10^-29" .
 
 
-###  http://pgxlod.loria.fr/resource/_1e_activity
+###  http://ns.inria.fr/pgxlod/resource/_1e_activity
 pgxlod:_1e_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
-                    dul:hasQuality <http://pgxlod.loria.fr/resource/_1e_quality2> ,
+                    dul:hasQuality <http://ns.inria.fr/pgxlod/resource/_1e_quality2> ,
                                    pgxlod:_1e_quality1 ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1e_mosley_analysis_1> ;
-                    <http://www.w3.org/ns/prov#influencer> <http://pgxlod.loria.fr/resource/emerge_network_cohort> .
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1e_mosley_analysis_1> ;
+                    <http://www.w3.org/ns/prov#influencer> <http://ns.inria.fr/pgxlod/resource/emerge_network_cohort> .
 
 
-###  http://pgxlod.loria.fr/resource/_1e_quality1
+###  http://ns.inria.fr/pgxlod/resource/_1e_quality1
 pgxlod:_1e_quality1 rdf:type owl:NamedIndividual ,
                              dul:Quality ;
-                    dul:hasQuality <http://pgxlod.loria.fr/resource/odds_ratio> ;
+                    dul:hasQuality <http://ns.inria.fr/pgxlod/resource/odds_ratio> ;
                     dul:hasDataValue "1.3 (95%)" .
 
 
-###  http://pgxlod.loria.fr/resource/_1f_activity
+###  http://ns.inria.fr/pgxlod/resource/_1f_activity
 pgxlod:_1f_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1f_quality ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1f_driest_analysis_1> ;
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1f_driest_analysis_1> ;
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1f_quality
+###  http://ns.inria.fr/pgxlod/resource/_1f_quality
 pgxlod:_1f_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue "1.1 10^-7" .
 
 
-###  http://pgxlod.loria.fr/resource/_1g_activity
+###  http://ns.inria.fr/pgxlod/resource/_1g_activity
 pgxlod:_1g_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1g_quality ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1g_wells_analysis_1> ;
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1g_wells_analysis_1> ;
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1g_quality
+###  http://ns.inria.fr/pgxlod/resource/_1g_quality
 pgxlod:_1g_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue "1 10^-5" .
 
 
-###  http://pgxlod.loria.fr/resource/_1h_activity
+###  http://ns.inria.fr/pgxlod/resource/_1h_activity
 pgxlod:_1h_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1h_quality ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1h_kawai_analysis_1> ;
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1h_kawai_analysis_1> ;
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1h_quality
+###  http://ns.inria.fr/pgxlod/resource/_1h_quality
 pgxlod:_1h_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/odds_ratio> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/odds_ratio> ;
                    dul:hasDataValue "2.05 (95%)" .
 
 
-###  http://pgxlod.loria.fr/resource/_1i_activity
+###  http://ns.inria.fr/pgxlod/resource/_1i_activity
 pgxlod:_1i_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
                     dul:hasQuality pgxlod:_1i_quality ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1i_feng_analysis_1> ;
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1i_feng_analysis_1> ;
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1i_quality
+###  http://ns.inria.fr/pgxlod/resource/_1i_quality
 pgxlod:_1i_quality rdf:type owl:NamedIndividual ,
                             dul:Quality ;
-                   dul:hasQuality <http://pgxlod.loria.fr/resource/p-value> ;
+                   dul:hasQuality <http://ns.inria.fr/pgxlod/resource/p-value> ;
                    dul:hasDataValue 0.002 .
 
 
-###  http://pgxlod.loria.fr/resource/_1j_activity
+###  http://ns.inria.fr/pgxlod/resource/_1j_activity
 pgxlod:_1j_activity rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/prov#Generation> ;
-                    dul:hasQuality <http://pgxlod.loria.fr/resource/_1j_quality2> ,
+                    dul:hasQuality <http://ns.inria.fr/pgxlod/resource/_1j_quality2> ,
                                    pgxlod:_1j_quality1 ;
-                    <http://www.w3.org/ns/prov#activity> <http://pgxlod.loria.fr/resource/1j_karnes_analysis_1> ;
+                    <http://www.w3.org/ns/prov#activity> <http://ns.inria.fr/pgxlod/resource/1j_karnes_analysis_1> ;
                     <http://www.w3.org/ns/prov#influencer> pgxlod:biovu .
 
 
-###  http://pgxlod.loria.fr/resource/_1j_quality1
+###  http://ns.inria.fr/pgxlod/resource/_1j_quality1
 pgxlod:_1j_quality1 rdf:type owl:NamedIndividual ,
                              dul:Quality ;
-                    dul:hasQuality <http://pgxlod.loria.fr/resource/odds_ratio> ;
+                    dul:hasQuality <http://ns.inria.fr/pgxlod/resource/odds_ratio> ;
                     dul:hasDataValue 18.52 .
 
 
-###  http://pgxlod.loria.fr/resource/a_neuraz_analysis_1
+###  http://ns.inria.fr/pgxlod/resource/a_neuraz_analysis_1
 pgxlod:a_neuraz_analysis_1 rdf:type owl:NamedIndividual ,
                                     <http://www.w3.org/ns/prov#Activity> ;
                            <http://www.w3.org/ns/prov#used> pgxlod:hegp_clinical_data_warehouse ;
                            <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:logistic_regression .
 
 
-###  http://pgxlod.loria.fr/resource/a_pr_1
+###  http://ns.inria.fr/pgxlod/resource/a_pr_1
 pgxlod:a_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1a_activity_neuraz ;
               pgxo:causes <pgxlod:iron_deficiency_anemia> ;
-              pgxo:isCausedBy <http://pgxlod.loria.fr/resource/thiopurine> ,
+              pgxo:isCausedBy <http://ns.inria.fr/pgxlod/resource/thiopurine> ,
                               pgxlod:TPMT_very_high_activity .
 
 
-###  http://pgxlod.loria.fr/resource/a_proxy_manual_extraction
+###  http://ns.inria.fr/pgxlod/resource/a_proxy_manual_extraction
 pgxlod:a_proxy_manual_extraction rdf:type owl:NamedIndividual ,
                                           <http://www.w3.org/ns/prov#Activity> ;
                                  <http://www.w3.org/ns/prov#used> pgxlod:thiopurine_cpic_clinical_guidelines ;
                                  <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:manual_extraction .
 
 
-###  http://pgxlod.loria.fr/resource/acei
+###  http://ns.inria.fr/pgxlod/resource/acei
 pgxlod:acei rdf:type owl:NamedIndividual ,
                      pgxo:Drug ,
                      atc:C09A ;
@@ -654,14 +654,14 @@ pgxlod:acei rdf:type owl:NamedIndividual ,
             rdfs:label "ACE inhibitor" .
 
 
-###  http://pgxlod.loria.fr/resource/anthracycline
+###  http://ns.inria.fr/pgxlod/resource/anthracycline
 pgxlod:anthracycline rdf:type owl:NamedIndividual ,
                               pgxo:Drug ,
                               mesh:C017065 ;
                      pgxo:causes pgxlod:g_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/b_pr_1
+###  http://ns.inria.fr/pgxlod/resource/b_pr_1
 pgxlod:b_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1b_activity ;
@@ -670,20 +670,20 @@ pgxlod:b_pr_1 rdf:type owl:NamedIndividual ,
                               pharmgkb:PA451906 .
 
 
-###  http://pgxlod.loria.fr/resource/b_ramirez_analysis_1
+###  http://ns.inria.fr/pgxlod/resource/b_ramirez_analysis_1
 pgxlod:b_ramirez_analysis_1 rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/prov#Activity> ;
                             <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                             <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/biovu
+###  http://ns.inria.fr/pgxlod/resource/biovu
 pgxlod:biovu rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/prov#Entity> ;
-             <http://www.w3.org/ns/prov#wasAttributedTo> <http://pgxlod.loria.fr/resource/vanderbilt_university_school_of_medicine> .
+             <http://www.w3.org/ns/prov#wasAttributedTo> <http://ns.inria.fr/pgxlod/resource/vanderbilt_university_school_of_medicine> .
 
 
-###  http://pgxlod.loria.fr/resource/bleeding
+###  http://ns.inria.fr/pgxlod/resource/bleeding
 pgxlod:bleeding rdf:type owl:NamedIndividual ,
                          pgxo:Phenotype ,
                          mesh:D006470 ;
@@ -691,14 +691,14 @@ pgxlod:bleeding rdf:type owl:NamedIndividual ,
                 rdfs:label "bleeding" .
 
 
-###  http://pgxlod.loria.fr/resource/c_delanay_analysis_1
+###  http://ns.inria.fr/pgxlod/resource/c_delanay_analysis_1
 pgxlod:c_delanay_analysis_1 rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/prov#Activity> ;
                             <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                             <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/c_pr_1
+###  http://ns.inria.fr/pgxlod/resource/c_pr_1
 pgxlod:c_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1c_activity ;
@@ -707,26 +707,26 @@ pgxlod:c_pr_1 rdf:type owl:NamedIndividual ,
                               pharmgkb:PA449053 .
 
 
-###  http://pgxlod.loria.fr/resource/cough
+###  http://ns.inria.fr/pgxlod/resource/cough
 pgxlod:cough rdf:type owl:NamedIndividual ,
                       pgxo:Phenotype ,
                       mesh:D003371 ;
              pgxo:isCausedBy pgxlod:e_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/cpic
+###  http://ns.inria.fr/pgxlod/resource/cpic
 pgxlod:cpic rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/prov#Organization> .
 
 
-###  http://pgxlod.loria.fr/resource/d_birdwell_analysis_1
+###  http://ns.inria.fr/pgxlod/resource/d_birdwell_analysis_1
 pgxlod:d_birdwell_analysis_1 rdf:type owl:NamedIndividual ,
                                       <http://www.w3.org/ns/prov#Activity> ;
                              <http://www.w3.org/ns/prov#used> pgxlod:biovu ;
                              <http://www.w3.org/ns/prov#wasAssociatedWith> pgxlod:linear_regression .
 
 
-###  http://pgxlod.loria.fr/resource/d_pr_1
+###  http://ns.inria.fr/pgxlod/resource/d_pr_1
 pgxlod:d_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1d_activity ;
@@ -735,7 +735,7 @@ pgxlod:d_pr_1 rdf:type owl:NamedIndividual ,
                               pharmgkb:PA451578 .
 
 
-###  http://pgxlod.loria.fr/resource/e_pr_1
+###  http://ns.inria.fr/pgxlod/resource/e_pr_1
 pgxlod:e_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1e_activity ;
@@ -744,21 +744,21 @@ pgxlod:e_pr_1 rdf:type owl:NamedIndividual ,
                               pgxlod:acei .
 
 
-###  http://pgxlod.loria.fr/resource/emerge_network
+###  http://ns.inria.fr/pgxlod/resource/emerge_network
 pgxlod:emerge_network rdf:type owl:NamedIndividual ,
                                <http://www.w3.org/ns/prov#Organization> .
 
 
-###  http://pgxlod.loria.fr/resource/f_pr_1
+###  http://ns.inria.fr/pgxlod/resource/f_pr_1
 pgxlod:f_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1f_activity ;
-              pgxo:causes <http://pgxlod.loria.fr/resource/serum_creatinie_level> ;
+              pgxo:causes <http://ns.inria.fr/pgxlod/resource/serum_creatinie_level> ;
               pgxo:isCausedBy dbsnp:rs2789047 ,
                               pharmgkb:PA451850 .
 
 
-###  http://pgxlod.loria.fr/resource/g_pr_1
+###  http://ns.inria.fr/pgxlod/resource/g_pr_1
 pgxlod:g_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1g_activity ;
@@ -767,7 +767,7 @@ pgxlod:g_pr_1 rdf:type owl:NamedIndividual ,
                               pgxlod:anthracycline .
 
 
-###  http://pgxlod.loria.fr/resource/h_pr_1
+###  http://ns.inria.fr/pgxlod/resource/h_pr_1
 pgxlod:h_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1h_activity ;
@@ -776,18 +776,18 @@ pgxlod:h_pr_1 rdf:type owl:NamedIndividual ,
                               pharmgkb:PA451906 .
 
 
-###  http://pgxlod.loria.fr/resource/hegp_clinical_data_warehouse
+###  http://ns.inria.fr/pgxlod/resource/hegp_clinical_data_warehouse
 pgxlod:hegp_clinical_data_warehouse rdf:type owl:NamedIndividual ,
                                              <http://www.w3.org/ns/prov#Entity> ;
                                     <http://www.w3.org/ns/prov#wasAttributedTo> pgxlod:hopital_europeen_georges_pompidou .
 
 
-###  http://pgxlod.loria.fr/resource/hopital_europeen_georges_pompidou
+###  http://ns.inria.fr/pgxlod/resource/hopital_europeen_georges_pompidou
 pgxlod:hopital_europeen_georges_pompidou rdf:type owl:NamedIndividual ,
                                                   <http://www.w3.org/ns/prov#Organization> .
 
 
-###  http://pgxlod.loria.fr/resource/i_pr_1
+###  http://ns.inria.fr/pgxlod/resource/i_pr_1
 pgxlod:i_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1i_activity ;
@@ -796,7 +796,7 @@ pgxlod:i_pr_1 rdf:type owl:NamedIndividual ,
                               pgxlod:statin .
 
 
-###  http://pgxlod.loria.fr/resource/j_pr_1
+###  http://ns.inria.fr/pgxlod/resource/j_pr_1
 pgxlod:j_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               <http://www.w3.org/ns/prov#qualifiedGeneration> pgxlod:_1j_activity ;
@@ -805,35 +805,35 @@ pgxlod:j_pr_1 rdf:type owl:NamedIndividual ,
                               pharmgkb:PA449855 .
 
 
-###  http://pgxlod.loria.fr/resource/ldl_chloesterol_response
+###  http://ns.inria.fr/pgxlod/resource/ldl_chloesterol_response
 pgxlod:ldl_chloesterol_response rdf:type owl:NamedIndividual ,
                                          pgxo:Phenotype ,
                                          loinc:13457-7 ;
                                 pgxo:isCausedBy pgxlod:i_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/linear_regression
+###  http://ns.inria.fr/pgxlod/resource/linear_regression
 pgxlod:linear_regression rdf:type owl:NamedIndividual ,
                                   <http://www.w3.org/ns/prov#SoftwareAgent> .
 
 
-###  http://pgxlod.loria.fr/resource/logistic_regression
+###  http://ns.inria.fr/pgxlod/resource/logistic_regression
 pgxlod:logistic_regression rdf:type owl:NamedIndividual ,
                                     <http://www.w3.org/ns/prov#SoftwareAgent> .
 
 
-###  http://pgxlod.loria.fr/resource/manual_extraction
+###  http://ns.inria.fr/pgxlod/resource/manual_extraction
 pgxlod:manual_extraction rdf:type owl:NamedIndividual ,
                                   <http://www.w3.org/ns/prov#Agent> .
 
 
-###  http://pgxlod.loria.fr/resource/maximal_change_in_lvef
+###  http://ns.inria.fr/pgxlod/resource/maximal_change_in_lvef
 pgxlod:maximal_change_in_lvef rdf:type owl:NamedIndividual ,
                                        pgxo:Phenotype ;
                               pgxo:isCausedBy pgxlod:g_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/statin
+###  http://ns.inria.fr/pgxlod/resource/statin
 pgxlod:statin rdf:type owl:NamedIndividual ,
                        pgxo:Drug ,
                        atc:C10AA ;
@@ -841,26 +841,26 @@ pgxlod:statin rdf:type owl:NamedIndividual ,
               rdfs:label "statin" .
 
 
-###  http://pgxlod.loria.fr/resource/stent_thrombosis
+###  http://ns.inria.fr/pgxlod/resource/stent_thrombosis
 pgxlod:stent_thrombosis rdf:type owl:NamedIndividual ,
                                  pgxo:Phenotype ,
                                  mesh:D013927 ;
                         pgxo:isCausedBy pgxlod:c_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/tacrolimus_blood_concentration-to-dose_ratio
+###  http://ns.inria.fr/pgxlod/resource/tacrolimus_blood_concentration-to-dose_ratio
 pgxlod:tacrolimus_blood_concentration-to-dose_ratio rdf:type owl:NamedIndividual ,
                                                              pgxo:Phenotype ;
                                                     pgxo:isCausedBy pgxlod:d_pr_1 .
 
 
-###  http://pgxlod.loria.fr/resource/thiopurine_cpic_clinical_guidelines
+###  http://ns.inria.fr/pgxlod/resource/thiopurine_cpic_clinical_guidelines
 pgxlod:thiopurine_cpic_clinical_guidelines rdf:type owl:NamedIndividual ,
                                                     <http://www.w3.org/ns/prov#Entity> ;
                                            <http://www.w3.org/ns/prov#wasAttributedTo> pgxlod:cpic .
 
 
-###  http://pgxlod.loria.fr/resource/thrombocytopenia
+###  http://ns.inria.fr/pgxlod/resource/thrombocytopenia
 pgxlod:thrombocytopenia rdf:type owl:NamedIndividual ,
                                  pgxo:Phenotype ,
                                  mesh:D013921 ;
@@ -868,7 +868,7 @@ pgxlod:thrombocytopenia rdf:type owl:NamedIndividual ,
                         rdfs:label "thrombocytopenia" .
 
 
-###  http://pgxlod.loria.fr/resource/warfarin_reduced_dose_requirement
+###  http://ns.inria.fr/pgxlod/resource/warfarin_reduced_dose_requirement
 pgxlod:warfarin_reduced_dose_requirement rdf:type owl:NamedIndividual ,
                                                   pgxo:Phenotype ;
                                          pgxo:isCausedBy pgxlod:b_pr_1 .
