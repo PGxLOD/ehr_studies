@@ -12,7 +12,7 @@
 @prefix loinc: <http://purl.bioontology.org/ontology/LNC/> .
 @prefix pgxlod: <http://ns.inria.fr/pgxlod/resource/> .
 @prefix icd10cm: <http://purl.bioontology.org/ontology/ICD10CM/> .
-@prefix pharmgkb: <http://bio2rdf.org/pharmgkb:> .
+@prefix clinpgx: <http://bio2rdf.org/clinpgx:> .
 
 
 #################################################################
@@ -87,160 +87,160 @@ dbsnp:rs10782473 rdf:type owl:NamedIndividual ,
 ###  http://bio2rdf.org/dbSNP:rs11591147
 dbsnp:rs11591147 rdf:type owl:NamedIndividual ,
                           pgxo:Variant ;
-                 ro:BFO_0000050 pharmgkb:PA38617 ;
+                 ro:BFO_0000050 clinpgx:PA38617 ;
                  pgxo:causes pgxlod:i_pr_1 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs145489027
 dbsnp:rs145489027 rdf:type owl:NamedIndividual ,
                            pgxo:Variant ;
-                  ro:BFO_0000050 pharmgkb:PA134893552 ;
+                  ro:BFO_0000050 clinpgx:PA134893552 ;
                   pgxo:causes pgxlod:e_pr_1 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs2789047
 dbsnp:rs2789047 rdf:type owl:NamedIndividual ,
                          pgxo:Variant ;
-                ro:BFO_0000050 pharmgkb:PA28685 ;
+                ro:BFO_0000050 clinpgx:PA28685 ;
                 pgxo:causes pgxlod:f_pr_1 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs7542939
 dbsnp:rs7542939 rdf:type owl:NamedIndividual ,
                          pgxo:Variant ;
-                ro:BFO_0000050 pharmgkb:PA33715 ;
+                ro:BFO_0000050 clinpgx:PA33715 ;
                 pgxo:causes pgxlod:g_pr_1 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs776747
 dbsnp:rs776747 rdf:type owl:NamedIndividual ,
                         pgxo:Variant ;
-               ro:BFO_0000050 pharmgkb:PA131 ;
+               ro:BFO_0000050 clinpgx:PA131 ;
                pgxo:causes pgxlod:d_pr_1 .
 
 
-###  http://bio2rdf.org/pharmgkb:PA124
-pharmgkb:PA124 rdf:type owl:NamedIndividual ,
-                        pgxo:Gene ;
-               ro:BFO_0000051 pharmgkb:PA165980635 ;
-               rdfs:label "CYP2C19" .
+###  http://bio2rdf.org/clinpgx:PA124
+clinpgx:PA124 rdf:type owl:NamedIndividual ,
+                       pgxo:Gene ;
+              ro:BFO_0000051 clinpgx:PA165980635 ;
+              rdfs:label "CYP2C19" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA126
-pharmgkb:PA126 rdf:type owl:NamedIndividual ,
-                        pgxo:Gene ;
-               ro:BFO_0000051 pharmgkb:PA165816543 ,
-                              pharmgkb:PA166124423 ;
-               rdfs:label "CYP2C9" .
+###  http://bio2rdf.org/clinpgx:PA126
+clinpgx:PA126 rdf:type owl:NamedIndividual ,
+                       pgxo:Gene ;
+              ro:BFO_0000051 clinpgx:PA165816543 ,
+                             clinpgx:PA166124423 ;
+              rdfs:label "CYP2C9" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA131
-pharmgkb:PA131 rdf:type owl:NamedIndividual ,
-                        pgxo:Gene ;
-               ro:BFO_0000051 dbsnp:rs776747 ;
-               rdfs:label "CYP3A5" .
+###  http://bio2rdf.org/clinpgx:PA131
+clinpgx:PA131 rdf:type owl:NamedIndividual ,
+                       pgxo:Gene ;
+              ro:BFO_0000051 dbsnp:rs776747 ;
+              rdfs:label "CYP3A5" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA134893552
-pharmgkb:PA134893552 rdf:type owl:NamedIndividual ,
-                              pgxo:Gene ;
-                     ro:BFO_0000051 dbsnp:rs145489027 ;
-                     rdfs:label "KCNIP4" .
+###  http://bio2rdf.org/clinpgx:PA134893552
+clinpgx:PA134893552 rdf:type owl:NamedIndividual ,
+                             pgxo:Gene ;
+                    ro:BFO_0000051 dbsnp:rs145489027 ;
+                    rdfs:label "KCNIP4" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA165816543
-pharmgkb:PA165816543 rdf:type owl:NamedIndividual ,
-                              pgxo:Haplotype ;
-                     ro:BFO_0000050 pharmgkb:PA126 ;
-                     pgxo:causes pgxlod:b_pr_1 ;
-                     rdfs:label "CYP2C9*2" .
+###  http://bio2rdf.org/clinpgx:PA165816543
+clinpgx:PA165816543 rdf:type owl:NamedIndividual ,
+                             pgxo:Haplotype ;
+                    ro:BFO_0000050 clinpgx:PA126 ;
+                    pgxo:causes pgxlod:b_pr_1 ;
+                    rdfs:label "CYP2C9*2" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA165819268
-pharmgkb:PA165819268 rdf:type owl:NamedIndividual ,
-                              pgxo:Haplotype ;
-                     ro:BFO_0000050 pharmgkb:PA356 ;
-                     rdfs:label "TPMT*1" .
+###  http://bio2rdf.org/clinpgx:PA165819268
+clinpgx:PA165819268 rdf:type owl:NamedIndividual ,
+                             pgxo:Haplotype ;
+                    ro:BFO_0000050 clinpgx:PA356 ;
+                    rdfs:label "TPMT*1" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA165980635
-pharmgkb:PA165980635 rdf:type owl:NamedIndividual ,
-                              pgxo:Haplotype ;
-                     ro:BFO_0000050 pharmgkb:PA124 ;
-                     pgxo:causes pgxlod:c_pr_1 ;
-                     rdfs:label "CYP2C19*2" .
+###  http://bio2rdf.org/clinpgx:PA165980635
+clinpgx:PA165980635 rdf:type owl:NamedIndividual ,
+                             pgxo:Haplotype ;
+                    ro:BFO_0000050 clinpgx:PA124 ;
+                    pgxo:causes pgxlod:c_pr_1 ;
+                    rdfs:label "CYP2C19*2" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA166124423
-pharmgkb:PA166124423 rdf:type owl:NamedIndividual ,
-                              pgxo:Haplotype ;
-                     ro:BFO_0000050 pharmgkb:PA126 ;
-                     pgxo:causes pgxlod:h_pr_1 ;
-                     rdfs:label "CYP2C9*3" .
+###  http://bio2rdf.org/clinpgx:PA166124423
+clinpgx:PA166124423 rdf:type owl:NamedIndividual ,
+                             pgxo:Haplotype ;
+                    ro:BFO_0000050 clinpgx:PA126 ;
+                    pgxo:causes pgxlod:h_pr_1 ;
+                    rdfs:label "CYP2C9*3" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA28685
-pharmgkb:PA28685 rdf:type owl:NamedIndividual ,
-                          pgxo:Gene ;
-                 ro:BFO_0000051 dbsnp:rs2789047 ;
-                 rdfs:label "GJA1" .
+###  http://bio2rdf.org/clinpgx:PA28685
+clinpgx:PA28685 rdf:type owl:NamedIndividual ,
+                         pgxo:Gene ;
+                ro:BFO_0000051 dbsnp:rs2789047 ;
+                rdfs:label "GJA1" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA33715
-pharmgkb:PA33715 rdf:type owl:NamedIndividual ,
-                          pgxo:Gene ;
-                 ro:BFO_0000051 dbsnp:rs7542939 ;
-                 rdfs:label "PRDM2" .
+###  http://bio2rdf.org/clinpgx:PA33715
+clinpgx:PA33715 rdf:type owl:NamedIndividual ,
+                         pgxo:Gene ;
+                ro:BFO_0000051 dbsnp:rs7542939 ;
+                rdfs:label "PRDM2" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA356
-pharmgkb:PA356 rdf:type owl:NamedIndividual ,
-                        pgxo:Gene ;
-               ro:BFO_0000051 pharmgkb:PA165819268 ;
-               rdfs:label "TPMT" .
+###  http://bio2rdf.org/clinpgx:PA356
+clinpgx:PA356 rdf:type owl:NamedIndividual ,
+                       pgxo:Gene ;
+              ro:BFO_0000051 clinpgx:PA165819268 ;
+              rdfs:label "TPMT" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA38617
-pharmgkb:PA38617 rdf:type owl:NamedIndividual ,
-                          pgxo:Gene ;
-                 ro:BFO_0000051 dbsnp:rs11591147 ;
-                 rdfs:label "PCSK9" .
+###  http://bio2rdf.org/clinpgx:PA38617
+clinpgx:PA38617 rdf:type owl:NamedIndividual ,
+                         pgxo:Gene ;
+                ro:BFO_0000051 dbsnp:rs11591147 ;
+                rdfs:label "PCSK9" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA449053
-pharmgkb:PA449053 rdf:type owl:NamedIndividual ,
-                           pgxo:Drug ;
-                  pgxo:causes pgxlod:c_pr_1 ;
-                  rdfs:label "clopidogrel" .
+###  http://bio2rdf.org/clinpgx:PA449053
+clinpgx:PA449053 rdf:type owl:NamedIndividual ,
+                          pgxo:Drug ;
+                 pgxo:causes pgxlod:c_pr_1 ;
+                 rdfs:label "clopidogrel" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA449855
-pharmgkb:PA449855 rdf:type owl:NamedIndividual ,
-                           pgxo:Drug ;
-                  pgxo:causes pgxlod:j_pr_1 ;
-                  rdfs:label "heparin" .
+###  http://bio2rdf.org/clinpgx:PA449855
+clinpgx:PA449855 rdf:type owl:NamedIndividual ,
+                          pgxo:Drug ;
+                 pgxo:causes pgxlod:j_pr_1 ;
+                 rdfs:label "heparin" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA451578
-pharmgkb:PA451578 rdf:type owl:NamedIndividual ,
-                           pgxo:Drug ;
-                  pgxo:causes pgxlod:d_pr_1 ;
-                  rdfs:label "tacrolimus" .
+###  http://bio2rdf.org/clinpgx:PA451578
+clinpgx:PA451578 rdf:type owl:NamedIndividual ,
+                          pgxo:Drug ;
+                 pgxo:causes pgxlod:d_pr_1 ;
+                 rdfs:label "tacrolimus" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA451850
-pharmgkb:PA451850 rdf:type owl:NamedIndividual ,
-                           pgxo:Drug ;
-                  pgxo:causes pgxlod:f_pr_1 ;
-                  rdfs:label "vancomycin" .
+###  http://bio2rdf.org/clinpgx:PA451850
+clinpgx:PA451850 rdf:type owl:NamedIndividual ,
+                          pgxo:Drug ;
+                 pgxo:causes pgxlod:f_pr_1 ;
+                 rdfs:label "vancomycin" .
 
 
-###  http://bio2rdf.org/pharmgkb:PA451906
-pharmgkb:PA451906 rdf:type owl:NamedIndividual ,
-                           pgxo:Drug ;
-                  pgxo:causes pgxlod:b_pr_1 ,
-                              pgxlod:h_pr_1 ;
-                  rdfs:label "warfarin" .
+###  http://bio2rdf.org/clinpgx:PA451906
+clinpgx:PA451906 rdf:type owl:NamedIndividual ,
+                          pgxo:Drug ;
+                 pgxo:causes pgxlod:b_pr_1 ,
+                             pgxlod:h_pr_1 ;
+                 rdfs:label "warfarin" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/_1e_quality2
@@ -343,7 +343,7 @@ pgxlod:1j_karnes_analysis_1 rdf:type owl:NamedIndividual ,
 pgxlod:TPMT_very_high_activity rdf:type owl:NamedIndividual ,
                                         pgxo:Phenotype ;
                                pgxo:qualifiedProxy pgxlod:_1a_proxy ;
-                               ro:RO_0002502 pharmgkb:PA165819268 ;
+                               ro:RO_0002502 clinpgx:PA165819268 ;
                                pgxo:causes pgxlod:a_pr_1 ;
                                rdfs:label "TPMT very high activity" .
 
@@ -359,7 +359,7 @@ pgxlod:_1a_activity_neuraz rdf:type owl:NamedIndividual ,
 ###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
 pgxlod:_1a_proxy rdf:type owl:NamedIndividual ,
                           prov:Entity ;
-                 pgxo:qualifiedVariation pharmgkb:PA165819268 ;
+                 pgxo:qualifiedVariation clinpgx:PA165819268 ;
                  prov:qualifiedGeneration pgxlod:_1a_proxy_activity .
 
 
@@ -557,8 +557,8 @@ pgxlod:b_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               prov:qualifiedGeneration pgxlod:_1b_activity ;
               pgxo:causes pgxlod:warfarin_reduced_dose_requirement ;
-              pgxo:isCausedBy pharmgkb:PA165816543 ,
-                              pharmgkb:PA451906 .
+              pgxo:isCausedBy clinpgx:PA165816543 ,
+                              clinpgx:PA451906 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/b_ramirez_analysis_1
@@ -594,8 +594,8 @@ pgxlod:c_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               prov:qualifiedGeneration pgxlod:_1c_activity ;
               pgxo:causes pgxlod:stent_thrombosis ;
-              pgxo:isCausedBy pharmgkb:PA165980635 ,
-                              pharmgkb:PA449053 .
+              pgxo:isCausedBy clinpgx:PA165980635 ,
+                              clinpgx:PA449053 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/cough
@@ -629,7 +629,7 @@ pgxlod:d_pr_1 rdf:type owl:NamedIndividual ,
               prov:qualifiedGeneration pgxlod:_1d_activity ;
               pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
               pgxo:isCausedBy dbsnp:rs776747 ,
-                              pharmgkb:PA451578 .
+                              clinpgx:PA451578 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/e_pr_1
@@ -652,7 +652,7 @@ pgxlod:f_pr_1 rdf:type owl:NamedIndividual ,
               prov:qualifiedGeneration pgxlod:_1f_activity ;
               pgxo:causes pgxlod:serum_creatinine_level ;
               pgxo:isCausedBy dbsnp:rs2789047 ,
-                              pharmgkb:PA451850 .
+                              clinpgx:PA451850 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/g_pr_1
@@ -669,8 +669,8 @@ pgxlod:h_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               prov:qualifiedGeneration pgxlod:_1h_activity ;
               pgxo:causes pgxlod:bleeding ;
-              pgxo:isCausedBy pharmgkb:PA166124423 ,
-                              pharmgkb:PA451906 .
+              pgxo:isCausedBy clinpgx:PA166124423 ,
+                              clinpgx:PA451906 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/hegp_clinical_data_warehouse
@@ -699,7 +699,7 @@ pgxlod:j_pr_1 rdf:type owl:NamedIndividual ,
               prov:qualifiedGeneration pgxlod:_1j_activity ;
               pgxo:causes pgxlod:thrombocytopenia ;
               pgxo:isCausedBy dbsnp:rs10782473 ,
-                              pharmgkb:PA449855 .
+                              clinpgx:PA449855 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/ldl_chloesterol_response
@@ -778,5 +778,3 @@ pgxlod:iron_deficiency_anemia rdf:type owl:NamedIndividual ,
                               pgxo:isCausedBy pgxlod:a_pr_1 ;
                               rdfs:label "iron deficiency anemia" .
 
-
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
