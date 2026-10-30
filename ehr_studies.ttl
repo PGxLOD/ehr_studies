@@ -21,67 +21,56 @@
 
 ###  http://purl.bioontology.org/ontology/ICD10CM/D50
 icd10cm:D50 rdf:type owl:Class ;
-            rdfs:subClassOf pgxo:Phenotype ;
             rdfs:label "Iron deficiency anemia" .
 
 
 ###  http://purl.bioontology.org/ontology/LNC/13457-7
 loinc:13457-7 rdf:type owl:Class ;
-              rdfs:subClassOf pgxo:Phenotype ;
               rdfs:label "Cholesterol, LDL" .
 
 
 ###  http://purl.bioontology.org/ontology/LNC/LP32035-5
 loinc:LP32035-5 rdf:type owl:Class ;
-                rdfs:subClassOf pgxo:Phenotype ;
                 rdfs:label "Creatinine" .
 
 
 ###  http://purl.bioontology.org/ontology/MESH/C017065
 mesh:C017065 rdf:type owl:Class ;
-             rdfs:subClassOf pgxo:Drug ;
              rdfs:label "beromycin, anthracycline" .
 
 
 ###  http://purl.bioontology.org/ontology/MESH/D003371
 mesh:D003371 rdf:type owl:Class ;
-             rdfs:subClassOf pgxo:Phenotype ;
              rdfs:label "cough" .
 
 
 ###  http://purl.bioontology.org/ontology/MESH/D006470
 mesh:D006470 rdf:type owl:Class ;
-             rdfs:subClassOf pgxo:Phenotype ;
              rdfs:label "hemorrhage" .
 
 
 ###  http://purl.bioontology.org/ontology/MESH/D013921
 mesh:D013921 rdf:type owl:Class ;
-             rdfs:subClassOf pgxo:Phenotype ;
              rdfs:label "thrombocytopenia" .
 
 
 ###  http://purl.bioontology.org/ontology/MESH/D013927
 mesh:D013927 rdf:type owl:Class ;
-             rdfs:subClassOf pgxo:Phenotype ;
              rdfs:label "thrombosis" .
 
 
 ###  http://purl.bioontology.org/ontology/UATC/C09A
 atc:C09A rdf:type owl:Class ;
-         rdfs:subClassOf pgxo:Drug ;
          rdfs:label "ACE inhibitor" .
 
 
 ###  http://purl.bioontology.org/ontology/UATC/C10AA
 atc:C10AA rdf:type owl:Class ;
-          rdfs:subClassOf pgxo:Drug ;
           rdfs:label "statin" .
 
 
 ### http://bio2rdf.org/chebi:35666
 chebi:35666 rdf:type owl:Class ;
-            rdfs:subClassOf pgxo:Drug ;
             rdfs:label "thiopurine" .
 
 
