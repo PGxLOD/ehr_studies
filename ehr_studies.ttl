@@ -281,6 +281,7 @@ pgxlod:p-value rdf:type owl:NamedIndividual ,
 ###  http://ns.inria.fr/pgxlod/resource/serum_creatinine_level
 pgxlod:serum_creatinine_level rdf:type owl:NamedIndividual ,
                                        pgxo:Phenotype ;
+                              ro:RO_0002502 pgxlod:creatinine ;
                               pgxo:isCausedBy pgxlod:f_pr_1 .
 
 
@@ -607,6 +608,12 @@ pgxlod:cough rdf:type owl:NamedIndividual ,
 ###  http://ns.inria.fr/pgxlod/resource/cpic
 pgxlod:cpic rdf:type owl:NamedIndividual ,
                      prov:Organization .
+
+
+###  http://ns.inria.fr/pgxlod/resource/creatinine
+pgxlod:creatinine rdf:type owl:NamedIndividual ,
+                           loinc:LP32035-5 ;
+                  rdfs:label "creatinine" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/d_birdwell_analysis_1
