@@ -112,8 +112,8 @@ dbsnp:rs7542939 rdf:type owl:NamedIndividual ,
                 pgxo:causes pgxlod:g_pr_1 .
 
 
-###  http://bio2rdf.org/dbSNP:rs776747
-dbsnp:rs776747 rdf:type owl:NamedIndividual ,
+###  http://bio2rdf.org/dbSNP:rs776746
+dbsnp:rs776746 rdf:type owl:NamedIndividual ,
                         pgxo:Variant ;
                ro:BFO_0000050 clinpgx:PA131 ;
                pgxo:causes pgxlod:d_pr_1 .
@@ -137,7 +137,7 @@ clinpgx:PA126 rdf:type owl:NamedIndividual ,
 ###  http://bio2rdf.org/clinpgx:PA131
 clinpgx:PA131 rdf:type owl:NamedIndividual ,
                        pgxo:Gene ;
-              ro:BFO_0000051 dbsnp:rs776747 ;
+              ro:BFO_0000051 dbsnp:rs776746 ;
               rdfs:label "CYP3A5" .
 
 
@@ -628,7 +628,7 @@ pgxlod:d_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               prov:qualifiedGeneration pgxlod:_1d_activity ;
               pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
-              pgxo:isCausedBy dbsnp:rs776747 ,
+              pgxo:isCausedBy dbsnp:rs776746 ,
                               clinpgx:PA451578 .
 
 
