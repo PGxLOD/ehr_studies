@@ -130,7 +130,7 @@ clinpgx:PA124 rdf:type owl:NamedIndividual ,
 clinpgx:PA126 rdf:type owl:NamedIndividual ,
                        pgxo:Gene ;
               ro:BFO_0000051 clinpgx:PA165816543 ,
-                             clinpgx:PA166124423 ;
+                             clinpgx:PA165816544 ;
               rdfs:label "CYP2C9" .
 
 
@@ -171,8 +171,8 @@ clinpgx:PA165980635 rdf:type owl:NamedIndividual ,
                     rdfs:label "CYP2C19*2" .
 
 
-###  http://bio2rdf.org/clinpgx:PA166124423
-clinpgx:PA166124423 rdf:type owl:NamedIndividual ,
+###  http://bio2rdf.org/clinpgx:PA165816544
+clinpgx:PA165816544 rdf:type owl:NamedIndividual ,
                              pgxo:Haplotype ;
                     ro:BFO_0000050 clinpgx:PA126 ;
                     pgxo:causes pgxlod:h_pr_1 ;
@@ -669,7 +669,7 @@ pgxlod:h_pr_1 rdf:type owl:NamedIndividual ,
                        pgxo:PharmacogenomicRelationship ;
               prov:qualifiedGeneration pgxlod:_1h_activity ;
               pgxo:causes pgxlod:bleeding ;
-              pgxo:isCausedBy clinpgx:PA166124423 ,
+              pgxo:isCausedBy clinpgx:PA165816544 ,
                               clinpgx:PA451906 .
 
 
