@@ -1,6 +1,5 @@
 @prefix ro: <http://purl.obolibrary.org/obo/> .
 @prefix atc: <http://purl.bioontology.org/ontology/UATC/> .
-@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix mesh: <http://purl.bioontology.org/ontology/MESH/> .
@@ -206,33 +205,9 @@ clinpgx:PA451906 rdf:type pgxo:Drug ;
                  rdfs:label "warfarin" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/_1e_quality2
-pgxlod:_1e_quality2 rdf:type dul:Quality ;
-                    dul:hasQuality pgxlod:p-value ;
-                    dul:hasDataValue "1 A10^-8" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1j_quality2
-pgxlod:_1j_quality2 rdf:type dul:Quality ;
-                    dul:hasQuality pgxlod:p-value ;
-                    dul:hasDataValue "3.18 10^-9" .
-
-
 ###  http://ns.inria.fr/pgxlod/resource/emerge_network_cohort
 pgxlod:emerge_network_cohort rdf:type prov:Entity ;
                              prov:wasAttributedTo pgxlod:emerge_network .
-
-
-###  http://ns.inria.fr/pgxlod/resource/hazard_ratio
-pgxlod:hazard_ratio rdf:type dul:Quality .
-
-
-###  http://ns.inria.fr/pgxlod/resource/odds_ratio
-pgxlod:odds_ratio rdf:type dul:Quality .
-
-
-###  http://ns.inria.fr/pgxlod/resource/p-value
-pgxlod:p-value rdf:type dul:Quality .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/serum_creatinine_level
@@ -295,143 +270,11 @@ pgxlod:TPMT_very_high_activity rdf:type pgxo:Phenotype ;
                                rdfs:label "TPMT very high activity" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/_1a_activity_neuraz
-pgxlod:_1a_activity_neuraz rdf:type prov:Generation ;
-                           dul:hasQuality pgxlod:_1a_quality ;
-                           prov:activity pgxlod:a_neuraz_analysis_1 ;
-                           prov:influencer pgxlod:hegp_clinical_data_warehouse .
-
-
 ###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
 pgxlod:_1a_proxy rdf:type prov:Entity ;
                  pgxo:qualifiedVariation clinpgx:PA165819268 ;
                  prov:wasGeneratedBy pgxlod:a_proxy_manual_extraction ;
                  rdfs:comment "Approximation: TPMT*1 (normal function) is the closest CPIC genotype; CPIC defines no genotype for very high TPMT activity." .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1a_quality
-pgxlod:_1a_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue 0.0004 .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1b_activity
-pgxlod:_1b_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1b_quality ;
-                    prov:activity pgxlod:b_ramirez_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1b_quality
-pgxlod:_1b_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue "1.4 10^-11" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1c_activity
-pgxlod:_1c_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1c_quality ;
-                    prov:activity pgxlod:c_delanay_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1c_quality
-pgxlod:_1c_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:hazard_ratio ;
-                   dul:hasDataValue "1.54 (95%)" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1d_activity
-pgxlod:_1d_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1d_quality ;
-                    prov:activity pgxlod:d_birdwell_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1d_quality
-pgxlod:_1d_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue "7.15 10^-29" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1e_activity
-pgxlod:_1e_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1e_quality2 ,
-                                   pgxlod:_1e_quality1 ;
-                    prov:activity pgxlod:1e_mosley_analysis_1 ;
-                    prov:influencer pgxlod:emerge_network_cohort .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1e_quality1
-pgxlod:_1e_quality1 rdf:type dul:Quality ;
-                    dul:hasQuality pgxlod:odds_ratio ;
-                    dul:hasDataValue "1.3 (95%)" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1f_activity
-pgxlod:_1f_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1f_quality ;
-                    prov:activity pgxlod:1f_driest_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1f_quality
-pgxlod:_1f_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue "1.1 10^-7" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1g_activity
-pgxlod:_1g_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1g_quality ;
-                    prov:activity pgxlod:1g_wells_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1g_quality
-pgxlod:_1g_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue "1 10^-5" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1h_activity
-pgxlod:_1h_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1h_quality ;
-                    prov:activity pgxlod:1h_kawai_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1h_quality
-pgxlod:_1h_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:odds_ratio ;
-                   dul:hasDataValue "2.05 (95%)" .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1i_activity
-pgxlod:_1i_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1i_quality ;
-                    prov:activity pgxlod:1i_feng_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1i_quality
-pgxlod:_1i_quality rdf:type dul:Quality ;
-                   dul:hasQuality pgxlod:p-value ;
-                   dul:hasDataValue 0.002 .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1j_activity
-pgxlod:_1j_activity rdf:type prov:Generation ;
-                    dul:hasQuality pgxlod:_1j_quality2 ,
-                                   pgxlod:_1j_quality1 ;
-                    prov:activity pgxlod:1j_karnes_analysis_1 ;
-                    prov:influencer pgxlod:biovu .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1j_quality1
-pgxlod:_1j_quality1 rdf:type dul:Quality ;
-                    dul:hasQuality pgxlod:odds_ratio ;
-                    dul:hasDataValue 18.52 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/a_neuraz_analysis_1
@@ -442,7 +285,8 @@ pgxlod:a_neuraz_analysis_1 rdf:type prov:Activity ;
 
 ###  http://ns.inria.fr/pgxlod/resource/a_pr_1
 pgxlod:a_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1a_activity_neuraz ;
+              prov:wasGeneratedBy pgxlod:a_neuraz_analysis_1 ;
+              pgxo:pValue 0.0004 ;
               pgxo:causes pgxlod:iron_deficiency_anemia ;
               pgxo:isCausedBy pgxlod:thiopurine ,
                               pgxlod:TPMT_very_high_activity .
@@ -469,7 +313,8 @@ pgxlod:anthracycline rdf:type pgxo:Drug ,
 
 ###  http://ns.inria.fr/pgxlod/resource/b_pr_1
 pgxlod:b_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1b_activity ;
+              prov:wasGeneratedBy pgxlod:b_ramirez_analysis_1 ;
+              pgxo:pValue "1.4 10^-11" ;
               pgxo:causes pgxlod:warfarin_reduced_dose_requirement ;
               pgxo:isCausedBy clinpgx:PA165816543 ,
                               clinpgx:PA451906 .
@@ -501,7 +346,8 @@ pgxlod:c_delanay_analysis_1 rdf:type prov:Activity ;
 
 ###  http://ns.inria.fr/pgxlod/resource/c_pr_1
 pgxlod:c_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1c_activity ;
+              prov:wasGeneratedBy pgxlod:c_delanay_analysis_1 ;
+              pgxo:hazardRatio "1.54 (95%)" ;
               pgxo:causes pgxlod:stent_thrombosis ;
               pgxo:isCausedBy clinpgx:PA165980635 ,
                               clinpgx:PA449053 .
@@ -530,7 +376,8 @@ pgxlod:d_birdwell_analysis_1 rdf:type prov:Activity ;
 
 ###  http://ns.inria.fr/pgxlod/resource/d_pr_1
 pgxlod:d_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1d_activity ;
+              prov:wasGeneratedBy pgxlod:d_birdwell_analysis_1 ;
+              pgxo:pValue "7.15 10^-29" ;
               pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
               pgxo:isCausedBy dbsnp:rs776746 ,
                               clinpgx:PA451578 .
@@ -538,7 +385,9 @@ pgxlod:d_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 
 ###  http://ns.inria.fr/pgxlod/resource/e_pr_1
 pgxlod:e_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1e_activity ;
+              prov:wasGeneratedBy pgxlod:1e_mosley_analysis_1 ;
+              pgxo:pValue "1 A10^-8" ;
+              pgxo:oddsRatio "1.3 (95%)" ;
               pgxo:causes pgxlod:cough ;
               pgxo:isCausedBy dbsnp:rs145489027 ,
                               pgxlod:acei .
@@ -550,7 +399,8 @@ pgxlod:emerge_network rdf:type prov:Organization .
 
 ###  http://ns.inria.fr/pgxlod/resource/f_pr_1
 pgxlod:f_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1f_activity ;
+              prov:wasGeneratedBy pgxlod:1f_driest_analysis_1 ;
+              pgxo:pValue "1.1 10^-7" ;
               pgxo:causes pgxlod:serum_creatinine_level ;
               pgxo:isCausedBy dbsnp:rs2789047 ,
                               clinpgx:PA451850 .
@@ -558,7 +408,8 @@ pgxlod:f_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 
 ###  http://ns.inria.fr/pgxlod/resource/g_pr_1
 pgxlod:g_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1g_activity ;
+              prov:wasGeneratedBy pgxlod:1g_wells_analysis_1 ;
+              pgxo:pValue "1 10^-5" ;
               pgxo:causes pgxlod:maximal_change_in_lvef ;
               pgxo:isCausedBy dbsnp:rs7542939 ,
                               pgxlod:anthracycline .
@@ -566,7 +417,8 @@ pgxlod:g_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 
 ###  http://ns.inria.fr/pgxlod/resource/h_pr_1
 pgxlod:h_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1h_activity ;
+              prov:wasGeneratedBy pgxlod:1h_kawai_analysis_1 ;
+              pgxo:oddsRatio "2.05 (95%)" ;
               pgxo:causes pgxlod:bleeding ;
               pgxo:isCausedBy clinpgx:PA165816544 ,
                               clinpgx:PA451906 .
@@ -583,7 +435,8 @@ pgxlod:hopital_europeen_georges_pompidou rdf:type prov:Organization .
 
 ###  http://ns.inria.fr/pgxlod/resource/i_pr_1
 pgxlod:i_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1i_activity ;
+              prov:wasGeneratedBy pgxlod:1i_feng_analysis_1 ;
+              pgxo:pValue 0.002 ;
               pgxo:causes pgxlod:ldl_chloesterol_response ;
               pgxo:isCausedBy dbsnp:rs11591147 ,
                               pgxlod:statin .
@@ -591,7 +444,9 @@ pgxlod:i_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 
 ###  http://ns.inria.fr/pgxlod/resource/j_pr_1
 pgxlod:j_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:qualifiedGeneration pgxlod:_1j_activity ;
+              prov:wasGeneratedBy pgxlod:1j_karnes_analysis_1 ;
+              pgxo:pValue "3.18 10^-9" ;
+              pgxo:oddsRatio 18.52 ;
               pgxo:causes pgxlod:thrombocytopenia ;
               pgxo:isCausedBy dbsnp:rs10782473 ,
                               clinpgx:PA449855 .
