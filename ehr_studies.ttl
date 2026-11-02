@@ -80,35 +80,41 @@ chebi:35666 rdf:type owl:Class ;
 
 ###  http://bio2rdf.org/dbSNP:rs10782473
 dbsnp:rs10782473 rdf:type pgxo:Variant ;
-                 pgxo:causes pgxlod:ehr_studies_v2_relation_10 .
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_10 ;
+                 rdfs:label "rs10782473" .
 
 
 ###  http://bio2rdf.org/dbSNP:rs11591147
 dbsnp:rs11591147 rdf:type pgxo:Variant ;
                  ro:BFO_0000050 clinpgx:PA38617 ;
-                 pgxo:causes pgxlod:ehr_studies_v2_relation_9 .
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_9 ;
+                 rdfs:label "rs11591147" .
 
 
 ###  http://bio2rdf.org/dbSNP:rs145489027
 dbsnp:rs145489027 rdf:type pgxo:Variant ;
                   ro:BFO_0000050 clinpgx:PA134893552 ;
-                  pgxo:causes pgxlod:ehr_studies_v2_relation_5 .
+                  pgxo:causes pgxlod:ehr_studies_v2_relation_5 ;
+                  rdfs:label "rs145489027" .
 
 
 ###  http://bio2rdf.org/dbSNP:rs2789047
 dbsnp:rs2789047 rdf:type pgxo:Variant ;
-                pgxo:causes pgxlod:ehr_studies_v2_relation_6 .
+                pgxo:causes pgxlod:ehr_studies_v2_relation_6 ;
+                rdfs:label "rs2789047" .
 
 
 ###  http://bio2rdf.org/dbSNP:rs7542939
 dbsnp:rs7542939 rdf:type pgxo:Variant ;
-                pgxo:causes pgxlod:ehr_studies_v2_relation_7 .
+                pgxo:causes pgxlod:ehr_studies_v2_relation_7 ;
+                rdfs:label "rs7542939" .
 
 
 ###  http://bio2rdf.org/dbSNP:rs776746
 dbsnp:rs776746 rdf:type pgxo:Variant ;
                ro:BFO_0000050 clinpgx:PA131 ;
-               pgxo:causes pgxlod:ehr_studies_v2_relation_4 .
+               pgxo:causes pgxlod:ehr_studies_v2_relation_4 ;
+               rdfs:label "rs776746" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA124
@@ -214,13 +220,15 @@ pgxlod:emerge_network_cohort rdf:type prov:Entity ;
 ###  http://ns.inria.fr/pgxlod/resource/serum_creatinine_level
 pgxlod:serum_creatinine_level rdf:type pgxo:Phenotype ;
                               ro:RO_0002502 pgxlod:creatinine ;
-                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_6 .
+                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_6 ;
+                              rdfs:label "serum creatinine level" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/thiopurine
 pgxlod:thiopurine rdf:type pgxo:Drug ,
                            chebi:35666 ;
-                  pgxo:causes pgxlod:ehr_studies_v2_relation_1 .
+                  pgxo:causes pgxlod:ehr_studies_v2_relation_1 ;
+                  rdfs:label "thiopurine" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/vanderbilt_university_school_of_medicine
@@ -310,7 +318,8 @@ pgxlod:acei rdf:type pgxo:Drug ,
 ###  http://ns.inria.fr/pgxlod/resource/anthracycline
 pgxlod:anthracycline rdf:type pgxo:Drug ,
                               mesh:D018943 ;
-                     pgxo:causes pgxlod:ehr_studies_v2_relation_7 .
+                     pgxo:causes pgxlod:ehr_studies_v2_relation_7 ;
+                     rdfs:label "anthracycline" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_2
@@ -361,7 +370,8 @@ pgxlod:ehr_studies_v2_relation_3 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/cough
 pgxlod:cough rdf:type pgxo:Phenotype ,
                       mesh:D003371 ;
-             pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_5 .
+             pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_5 ;
+             rdfs:label "cough" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/cpic
@@ -467,7 +477,8 @@ pgxlod:ehr_studies_v2_relation_10 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/ldl_cholesterol_response
 pgxlod:ldl_cholesterol_response rdf:type pgxo:Phenotype ,
                                          loinc:13457-7 ;
-                                pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_9 .
+                                pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_9 ;
+                                rdfs:label "LDL-cholesterol response" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/linear_regression
@@ -484,7 +495,8 @@ pgxlod:manual_extraction rdf:type prov:Agent .
 
 ###  http://ns.inria.fr/pgxlod/resource/maximal_change_in_lvef
 pgxlod:maximal_change_in_lvef rdf:type pgxo:Phenotype ;
-                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_7 .
+                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_7 ;
+                              rdfs:label "maximal change in left ventricular ejection fraction" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/statin
@@ -497,12 +509,15 @@ pgxlod:statin rdf:type pgxo:Drug ,
 ###  http://ns.inria.fr/pgxlod/resource/stent_thrombosis
 pgxlod:stent_thrombosis rdf:type pgxo:Phenotype ,
                                  mesh:D013927 ;
-                        pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_3 .
+                        pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_3 ;
+                        rdfs:label "stent thrombosis" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/tacrolimus_blood_concentration-to-dose_ratio
 pgxlod:tacrolimus_blood_concentration-to-dose_ratio rdf:type pgxo:Phenotype ;
-                                                    pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_4 .
+                                                    pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_4 ;
+                                                    ro:RO_0002502 clinpgx:PA451578 ;
+                                                    rdfs:label "tacrolimus blood concentration to dose ratio" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/thiopurine_cpic_clinical_guidelines
@@ -519,7 +534,9 @@ pgxlod:thrombocytopenia rdf:type pgxo:Phenotype ,
 
 ###  http://ns.inria.fr/pgxlod/resource/warfarin_reduced_dose_requirement
 pgxlod:warfarin_reduced_dose_requirement rdf:type pgxo:Phenotype ;
-                                         pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_2 .
+                                         pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_2 ;
+                                         ro:RO_0002502 clinpgx:PA451906 ;
+                                         rdfs:label "reduced warfarin dose requirement" .
 
 
 ###  pgxlod:iron_deficiency_anemia
