@@ -80,35 +80,35 @@ chebi:35666 rdf:type owl:Class ;
 
 ###  http://bio2rdf.org/dbSNP:rs10782473
 dbsnp:rs10782473 rdf:type pgxo:Variant ;
-                 pgxo:causes pgxlod:j_pr_1 .
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_10 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs11591147
 dbsnp:rs11591147 rdf:type pgxo:Variant ;
                  ro:BFO_0000050 clinpgx:PA38617 ;
-                 pgxo:causes pgxlod:i_pr_1 .
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_9 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs145489027
 dbsnp:rs145489027 rdf:type pgxo:Variant ;
                   ro:BFO_0000050 clinpgx:PA134893552 ;
-                  pgxo:causes pgxlod:e_pr_1 .
+                  pgxo:causes pgxlod:ehr_studies_v2_relation_5 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs2789047
 dbsnp:rs2789047 rdf:type pgxo:Variant ;
-                pgxo:causes pgxlod:f_pr_1 .
+                pgxo:causes pgxlod:ehr_studies_v2_relation_6 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs7542939
 dbsnp:rs7542939 rdf:type pgxo:Variant ;
-                pgxo:causes pgxlod:g_pr_1 .
+                pgxo:causes pgxlod:ehr_studies_v2_relation_7 .
 
 
 ###  http://bio2rdf.org/dbSNP:rs776746
 dbsnp:rs776746 rdf:type pgxo:Variant ;
                ro:BFO_0000050 clinpgx:PA131 ;
-               pgxo:causes pgxlod:d_pr_1 .
+               pgxo:causes pgxlod:ehr_studies_v2_relation_4 .
 
 
 ###  http://bio2rdf.org/clinpgx:PA124
@@ -139,7 +139,7 @@ clinpgx:PA134893552 rdf:type pgxo:Gene ;
 ###  http://bio2rdf.org/clinpgx:PA165816543
 clinpgx:PA165816543 rdf:type pgxo:Haplotype ;
                     ro:BFO_0000050 clinpgx:PA126 ;
-                    pgxo:causes pgxlod:b_pr_1 ;
+                    pgxo:causes pgxlod:ehr_studies_v2_relation_2 ;
                     rdfs:label "CYP2C9*2" .
 
 
@@ -152,14 +152,14 @@ clinpgx:PA165819268 rdf:type pgxo:Haplotype ;
 ###  http://bio2rdf.org/clinpgx:PA165980635
 clinpgx:PA165980635 rdf:type pgxo:Haplotype ;
                     ro:BFO_0000050 clinpgx:PA124 ;
-                    pgxo:causes pgxlod:c_pr_1 ;
+                    pgxo:causes pgxlod:ehr_studies_v2_relation_3 ;
                     rdfs:label "CYP2C19*2" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA165816544
 clinpgx:PA165816544 rdf:type pgxo:Haplotype ;
                     ro:BFO_0000050 clinpgx:PA126 ;
-                    pgxo:causes pgxlod:h_pr_1 ;
+                    pgxo:causes pgxlod:ehr_studies_v2_relation_8 ;
                     rdfs:label "CYP2C9*3" .
 
 
@@ -177,32 +177,32 @@ clinpgx:PA38617 rdf:type pgxo:Gene ;
 
 ###  http://bio2rdf.org/clinpgx:PA449053
 clinpgx:PA449053 rdf:type pgxo:Drug ;
-                 pgxo:causes pgxlod:c_pr_1 ;
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_3 ;
                  rdfs:label "clopidogrel" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA449855
 clinpgx:PA449855 rdf:type pgxo:Drug ;
-                 pgxo:causes pgxlod:j_pr_1 ;
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_10 ;
                  rdfs:label "heparin" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA451578
 clinpgx:PA451578 rdf:type pgxo:Drug ;
-                 pgxo:causes pgxlod:d_pr_1 ;
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_4 ;
                  rdfs:label "tacrolimus" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA451850
 clinpgx:PA451850 rdf:type pgxo:Drug ;
-                 pgxo:causes pgxlod:f_pr_1 ;
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_6 ;
                  rdfs:label "vancomycin" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA451906
 clinpgx:PA451906 rdf:type pgxo:Drug ;
-                 pgxo:causes pgxlod:b_pr_1 ,
-                             pgxlod:h_pr_1 ;
+                 pgxo:causes pgxlod:ehr_studies_v2_relation_2 ,
+                             pgxlod:ehr_studies_v2_relation_8 ;
                  rdfs:label "warfarin" .
 
 
@@ -214,119 +214,119 @@ pgxlod:emerge_network_cohort rdf:type prov:Entity ;
 ###  http://ns.inria.fr/pgxlod/resource/serum_creatinine_level
 pgxlod:serum_creatinine_level rdf:type pgxo:Phenotype ;
                               ro:RO_0002502 pgxlod:creatinine ;
-                              pgxo:isCausedBy pgxlod:f_pr_1 .
+                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_6 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/thiopurine
 pgxlod:thiopurine rdf:type pgxo:Drug ,
                            chebi:35666 ;
-                  pgxo:causes pgxlod:a_pr_1 .
+                  pgxo:causes pgxlod:ehr_studies_v2_relation_1 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/vanderbilt_university_school_of_medicine
 pgxlod:vanderbilt_university_school_of_medicine rdf:type prov:Organization .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1e_mosley_analysis_1
-pgxlod:1e_mosley_analysis_1 rdf:type prov:Activity ;
-                            prov:used pgxlod:emerge_network_cohort ;
-                            prov:wasAssociatedWith pgxlod:logistic_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_5
+pgxlod:ehr_studies_v2_analysis_5 rdf:type prov:Activity ;
+                                 prov:used pgxlod:emerge_network_cohort ;
+                                 prov:wasAssociatedWith pgxlod:logistic_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1f_driest_analysis_1
-pgxlod:1f_driest_analysis_1 rdf:type prov:Activity ;
-                            prov:used pgxlod:biovu ;
-                            prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_6
+pgxlod:ehr_studies_v2_analysis_6 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1g_wells_analysis_1
-pgxlod:1g_wells_analysis_1 rdf:type prov:Activity ;
-                           prov:used pgxlod:biovu ;
-                           prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_7
+pgxlod:ehr_studies_v2_analysis_7 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1h_kawai_analysis_1
-pgxlod:1h_kawai_analysis_1 rdf:type prov:Activity ;
-                           prov:used pgxlod:biovu ;
-                           prov:wasAssociatedWith pgxlod:logistic_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_8
+pgxlod:ehr_studies_v2_analysis_8 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:logistic_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1i_feng_analysis_1
-pgxlod:1i_feng_analysis_1 rdf:type prov:Activity ;
-                          prov:used pgxlod:biovu ;
-                          prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_9
+pgxlod:ehr_studies_v2_analysis_9 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/1j_karnes_analysis_1
-pgxlod:1j_karnes_analysis_1 rdf:type prov:Activity ;
-                            prov:used pgxlod:biovu ;
-                            prov:wasAssociatedWith pgxlod:logistic_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_10
+pgxlod:ehr_studies_v2_analysis_10 rdf:type prov:Activity ;
+                                  prov:used pgxlod:biovu ;
+                                  prov:wasAssociatedWith pgxlod:logistic_regression .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/TPMT_very_high_activity
 pgxlod:TPMT_very_high_activity rdf:type pgxo:Phenotype ;
-                               pgxo:qualifiedProxy pgxlod:_1a_proxy ;
+                               pgxo:qualifiedProxy pgxlod:ehr_studies_v2_proxy_1 ;
                                ro:RO_0002502 clinpgx:PA356 ;
-                               pgxo:causes pgxlod:a_pr_1 ;
+                               pgxo:causes pgxlod:ehr_studies_v2_relation_1 ;
                                rdfs:label "TPMT very high activity" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
-pgxlod:_1a_proxy rdf:type prov:Entity ;
-                 pgxo:qualifiedVariation clinpgx:PA165819268 ;
-                 prov:wasGeneratedBy pgxlod:a_proxy_manual_extraction ;
-                 rdfs:comment "Approximation: TPMT*1 (normal function) is the closest CPIC genotype; CPIC defines no genotype for very high TPMT activity." .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_proxy_1
+pgxlod:ehr_studies_v2_proxy_1 rdf:type prov:Entity ;
+                              pgxo:qualifiedVariation clinpgx:PA165819268 ;
+                              prov:wasGeneratedBy pgxlod:ehr_studies_v2_proxy_extraction_1 ;
+                              rdfs:comment "Approximation: TPMT*1 (normal function) is the closest CPIC genotype; CPIC defines no genotype for very high TPMT activity." .
 
 
-###  http://ns.inria.fr/pgxlod/resource/a_neuraz_analysis_1
-pgxlod:a_neuraz_analysis_1 rdf:type prov:Activity ;
-                           prov:used pgxlod:hegp_clinical_data_warehouse ;
-                           prov:wasAssociatedWith pgxlod:logistic_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_1
+pgxlod:ehr_studies_v2_analysis_1 rdf:type prov:Activity ;
+                                 prov:used pgxlod:hegp_clinical_data_warehouse ;
+                                 prov:wasAssociatedWith pgxlod:logistic_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/a_pr_1
-pgxlod:a_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:a_neuraz_analysis_1 ;
-              pgxo:pValue 0.0004 ;
-              prov:wasDerivedFrom pubmed:24385893 ;
-              pgxo:causes pgxlod:iron_deficiency_anemia ;
-              pgxo:isCausedBy pgxlod:thiopurine ,
-                              pgxlod:TPMT_very_high_activity .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_1
+pgxlod:ehr_studies_v2_relation_1 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_1 ;
+                                 pgxo:pValue 0.0004 ;
+                                 prov:wasDerivedFrom pubmed:24385893 ;
+                                 pgxo:causes pgxlod:iron_deficiency_anemia ;
+                                 pgxo:isCausedBy pgxlod:thiopurine ,
+                                                 pgxlod:TPMT_very_high_activity .
 
 
-###  http://ns.inria.fr/pgxlod/resource/a_proxy_manual_extraction
-pgxlod:a_proxy_manual_extraction rdf:type prov:Activity ;
-                                 prov:used pgxlod:thiopurine_cpic_clinical_guidelines ;
-                                 prov:wasAssociatedWith pgxlod:manual_extraction .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_proxy_extraction_1
+pgxlod:ehr_studies_v2_proxy_extraction_1 rdf:type prov:Activity ;
+                                         prov:used pgxlod:thiopurine_cpic_clinical_guidelines ;
+                                         prov:wasAssociatedWith pgxlod:manual_extraction .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/acei
 pgxlod:acei rdf:type pgxo:Drug ,
                      atc:C09A ;
-            pgxo:causes pgxlod:e_pr_1 ;
+            pgxo:causes pgxlod:ehr_studies_v2_relation_5 ;
             rdfs:label "ACE inhibitor" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/anthracycline
 pgxlod:anthracycline rdf:type pgxo:Drug ,
                               mesh:D018943 ;
-                     pgxo:causes pgxlod:g_pr_1 .
+                     pgxo:causes pgxlod:ehr_studies_v2_relation_7 .
 
 
-###  http://ns.inria.fr/pgxlod/resource/b_pr_1
-pgxlod:b_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:b_ramirez_analysis_1 ;
-              pgxo:pValue 1.4e-11 ;
-              prov:wasDerivedFrom pubmed:22329724 ;
-              pgxo:causes pgxlod:warfarin_reduced_dose_requirement ;
-              pgxo:isCausedBy clinpgx:PA165816543 ,
-                              clinpgx:PA451906 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_2
+pgxlod:ehr_studies_v2_relation_2 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_2 ;
+                                 pgxo:pValue 1.4e-11 ;
+                                 prov:wasDerivedFrom pubmed:22329724 ;
+                                 pgxo:causes pgxlod:warfarin_reduced_dose_requirement ;
+                                 pgxo:isCausedBy clinpgx:PA165816543 ,
+                                                 clinpgx:PA451906 .
 
 
-###  http://ns.inria.fr/pgxlod/resource/b_ramirez_analysis_1
-pgxlod:b_ramirez_analysis_1 rdf:type prov:Activity ;
-                            prov:used pgxlod:biovu ;
-                            prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_2
+pgxlod:ehr_studies_v2_analysis_2 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/biovu
@@ -337,31 +337,31 @@ pgxlod:biovu rdf:type prov:Entity ;
 ###  http://ns.inria.fr/pgxlod/resource/bleeding
 pgxlod:bleeding rdf:type pgxo:Phenotype ,
                          mesh:D006470 ;
-                pgxo:isCausedBy pgxlod:h_pr_1 ;
+                pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_8 ;
                 rdfs:label "bleeding" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/c_delaney_analysis_1
-pgxlod:c_delaney_analysis_1 rdf:type prov:Activity ;
-                            prov:used pgxlod:biovu ;
-                            prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_3
+pgxlod:ehr_studies_v2_analysis_3 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/c_pr_1
-pgxlod:c_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:c_delaney_analysis_1 ;
-              pgxo:hazardRatio 1.54 ;
-              pgxo:pValue 0.003 ;
-              prov:wasDerivedFrom pubmed:22190063 ;
-              pgxo:causes pgxlod:stent_thrombosis ;
-              pgxo:isCausedBy clinpgx:PA165980635 ,
-                              clinpgx:PA449053 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_3
+pgxlod:ehr_studies_v2_relation_3 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_3 ;
+                                 pgxo:hazardRatio 1.54 ;
+                                 pgxo:pValue 0.003 ;
+                                 prov:wasDerivedFrom pubmed:22190063 ;
+                                 pgxo:causes pgxlod:stent_thrombosis ;
+                                 pgxo:isCausedBy clinpgx:PA165980635 ,
+                                                 clinpgx:PA449053 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/cough
 pgxlod:cough rdf:type pgxo:Phenotype ,
                       mesh:D003371 ;
-             pgxo:isCausedBy pgxlod:e_pr_1 .
+             pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_5 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/cpic
@@ -373,65 +373,65 @@ pgxlod:creatinine rdf:type loinc:LP32035-5 ;
                   rdfs:label "creatinine" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/d_birdwell_analysis_1
-pgxlod:d_birdwell_analysis_1 rdf:type prov:Activity ;
-                             prov:used pgxlod:biovu ;
-                             prov:wasAssociatedWith pgxlod:linear_regression .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_analysis_4
+pgxlod:ehr_studies_v2_analysis_4 rdf:type prov:Activity ;
+                                 prov:used pgxlod:biovu ;
+                                 prov:wasAssociatedWith pgxlod:linear_regression .
 
 
-###  http://ns.inria.fr/pgxlod/resource/d_pr_1
-pgxlod:d_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:d_birdwell_analysis_1 ;
-              pgxo:pValue 7.15e-29 ;
-              prov:wasDerivedFrom pubmed:22108237 ;
-              pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
-              pgxo:isCausedBy dbsnp:rs776746 ,
-                              clinpgx:PA451578 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_4
+pgxlod:ehr_studies_v2_relation_4 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_4 ;
+                                 pgxo:pValue 7.15e-29 ;
+                                 prov:wasDerivedFrom pubmed:22108237 ;
+                                 pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
+                                 pgxo:isCausedBy dbsnp:rs776746 ,
+                                                 clinpgx:PA451578 .
 
 
-###  http://ns.inria.fr/pgxlod/resource/e_pr_1
-pgxlod:e_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1e_mosley_analysis_1 ;
-              pgxo:pValue 1.0e-8 ;
-              pgxo:oddsRatio 1.3 ;
-              prov:wasDerivedFrom pubmed:26169577 ;
-              pgxo:causes pgxlod:cough ;
-              pgxo:isCausedBy dbsnp:rs145489027 ,
-                              pgxlod:acei .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_5
+pgxlod:ehr_studies_v2_relation_5 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_5 ;
+                                 pgxo:pValue 1.0e-8 ;
+                                 pgxo:oddsRatio 1.3 ;
+                                 prov:wasDerivedFrom pubmed:26169577 ;
+                                 pgxo:causes pgxlod:cough ;
+                                 pgxo:isCausedBy dbsnp:rs145489027 ,
+                                                 pgxlod:acei .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/emerge_network
 pgxlod:emerge_network rdf:type prov:Organization .
 
 
-###  http://ns.inria.fr/pgxlod/resource/f_pr_1
-pgxlod:f_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1f_driest_analysis_1 ;
-              pgxo:pValue 1.1e-7 ;
-              prov:wasDerivedFrom pubmed:26030142 ;
-              pgxo:causes pgxlod:serum_creatinine_level ;
-              pgxo:isCausedBy dbsnp:rs2789047 ,
-                              clinpgx:PA451850 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_6
+pgxlod:ehr_studies_v2_relation_6 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_6 ;
+                                 pgxo:pValue 1.1e-7 ;
+                                 prov:wasDerivedFrom pubmed:26030142 ;
+                                 pgxo:causes pgxlod:serum_creatinine_level ;
+                                 pgxo:isCausedBy dbsnp:rs2789047 ,
+                                                 clinpgx:PA451850 .
 
 
-###  http://ns.inria.fr/pgxlod/resource/g_pr_1
-pgxlod:g_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1g_wells_analysis_1 ;
-              pgxo:pValue 5.9e-6 ;
-              prov:wasDerivedFrom pubmed:28542097 ;
-              pgxo:causes pgxlod:maximal_change_in_lvef ;
-              pgxo:isCausedBy dbsnp:rs7542939 ,
-                              pgxlod:anthracycline .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_7
+pgxlod:ehr_studies_v2_relation_7 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_7 ;
+                                 pgxo:pValue 5.9e-6 ;
+                                 prov:wasDerivedFrom pubmed:28542097 ;
+                                 pgxo:causes pgxlod:maximal_change_in_lvef ;
+                                 pgxo:isCausedBy dbsnp:rs7542939 ,
+                                                 pgxlod:anthracycline .
 
 
-###  http://ns.inria.fr/pgxlod/resource/h_pr_1
-pgxlod:h_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1h_kawai_analysis_1 ;
-              pgxo:oddsRatio 2.05 ;
-              prov:wasDerivedFrom pubmed:25521356 ;
-              pgxo:causes pgxlod:bleeding ;
-              pgxo:isCausedBy clinpgx:PA165816544 ,
-                              clinpgx:PA451906 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_8
+pgxlod:ehr_studies_v2_relation_8 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_8 ;
+                                 pgxo:oddsRatio 2.05 ;
+                                 prov:wasDerivedFrom pubmed:25521356 ;
+                                 pgxo:causes pgxlod:bleeding ;
+                                 pgxo:isCausedBy clinpgx:PA165816544 ,
+                                                 clinpgx:PA451906 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/hegp_clinical_data_warehouse
@@ -443,31 +443,31 @@ pgxlod:hegp_clinical_data_warehouse rdf:type prov:Entity ;
 pgxlod:hopital_europeen_georges_pompidou rdf:type prov:Organization .
 
 
-###  http://ns.inria.fr/pgxlod/resource/i_pr_1
-pgxlod:i_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1i_feng_analysis_1 ;
-              pgxo:pValue 0.002 ;
-              prov:wasDerivedFrom pubmed:26902539 ;
-              pgxo:causes pgxlod:ldl_chloesterol_response ;
-              pgxo:isCausedBy dbsnp:rs11591147 ,
-                              pgxlod:statin .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_9
+pgxlod:ehr_studies_v2_relation_9 rdf:type pgxo:PharmacogenomicRelationship ;
+                                 prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_9 ;
+                                 pgxo:pValue 0.002 ;
+                                 prov:wasDerivedFrom pubmed:26902539 ;
+                                 pgxo:causes pgxlod:ldl_chloesterol_response ;
+                                 pgxo:isCausedBy dbsnp:rs11591147 ,
+                                                 pgxlod:statin .
 
 
-###  http://ns.inria.fr/pgxlod/resource/j_pr_1
-pgxlod:j_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:1j_karnes_analysis_1 ;
-              pgxo:pValue 3.18e-9 ;
-              pgxo:oddsRatio 18.52 ;
-              prov:wasDerivedFrom pubmed:25503805 ;
-              pgxo:causes pgxlod:thrombocytopenia ;
-              pgxo:isCausedBy dbsnp:rs10782473 ,
-                              clinpgx:PA449855 .
+###  http://ns.inria.fr/pgxlod/resource/ehr_studies_v2_relation_10
+pgxlod:ehr_studies_v2_relation_10 rdf:type pgxo:PharmacogenomicRelationship ;
+                                  prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_10 ;
+                                  pgxo:pValue 3.18e-9 ;
+                                  pgxo:oddsRatio 18.52 ;
+                                  prov:wasDerivedFrom pubmed:25503805 ;
+                                  pgxo:causes pgxlod:thrombocytopenia ;
+                                  pgxo:isCausedBy dbsnp:rs10782473 ,
+                                                  clinpgx:PA449855 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/ldl_chloesterol_response
 pgxlod:ldl_chloesterol_response rdf:type pgxo:Phenotype ,
                                          loinc:13457-7 ;
-                                pgxo:isCausedBy pgxlod:i_pr_1 .
+                                pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_9 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/linear_regression
@@ -484,25 +484,25 @@ pgxlod:manual_extraction rdf:type prov:Agent .
 
 ###  http://ns.inria.fr/pgxlod/resource/maximal_change_in_lvef
 pgxlod:maximal_change_in_lvef rdf:type pgxo:Phenotype ;
-                              pgxo:isCausedBy pgxlod:g_pr_1 .
+                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_7 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/statin
 pgxlod:statin rdf:type pgxo:Drug ,
                        atc:C10AA ;
-              pgxo:causes pgxlod:i_pr_1 ;
+              pgxo:causes pgxlod:ehr_studies_v2_relation_9 ;
               rdfs:label "statin" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/stent_thrombosis
 pgxlod:stent_thrombosis rdf:type pgxo:Phenotype ,
                                  mesh:D013927 ;
-                        pgxo:isCausedBy pgxlod:c_pr_1 .
+                        pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_3 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/tacrolimus_blood_concentration-to-dose_ratio
 pgxlod:tacrolimus_blood_concentration-to-dose_ratio rdf:type pgxo:Phenotype ;
-                                                    pgxo:isCausedBy pgxlod:d_pr_1 .
+                                                    pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_4 .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/thiopurine_cpic_clinical_guidelines
@@ -513,19 +513,19 @@ pgxlod:thiopurine_cpic_clinical_guidelines rdf:type prov:Entity ;
 ###  http://ns.inria.fr/pgxlod/resource/thrombocytopenia
 pgxlod:thrombocytopenia rdf:type pgxo:Phenotype ,
                                  mesh:D013921 ;
-                        pgxo:isCausedBy pgxlod:j_pr_1 ;
+                        pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_10 ;
                         rdfs:label "thrombocytopenia" .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/warfarin_reduced_dose_requirement
 pgxlod:warfarin_reduced_dose_requirement rdf:type pgxo:Phenotype ;
-                                         pgxo:isCausedBy pgxlod:b_pr_1 .
+                                         pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_2 .
 
 
 ###  pgxlod:iron_deficiency_anemia
 pgxlod:iron_deficiency_anemia rdf:type pgxo:Phenotype ,
                                        icd10cm:D50 ;
-                              pgxo:isCausedBy pgxlod:a_pr_1 ;
+                              pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_1 ;
                               rdfs:label "iron deficiency anemia" .
 
 
