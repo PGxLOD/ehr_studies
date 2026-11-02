@@ -10,6 +10,7 @@
 @prefix dbsnp: <http://bio2rdf.org/dbsnp:> .
 @prefix loinc: <http://purl.bioontology.org/ontology/LNC/> .
 @prefix pgxlod: <http://ns.inria.fr/pgxlod/resource/> .
+@prefix pubmed: <http://rdf.ncbi.nlm.nih.gov/pubmed/> .
 @prefix icd10cm: <http://purl.bioontology.org/ontology/ICD10CM/> .
 @prefix clinpgx: <http://bio2rdf.org/clinpgx:> .
 
@@ -287,6 +288,7 @@ pgxlod:a_neuraz_analysis_1 rdf:type prov:Activity ;
 pgxlod:a_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:a_neuraz_analysis_1 ;
               pgxo:pValue 0.0004 ;
+              prov:wasDerivedFrom pubmed:24385893 ;
               pgxo:causes pgxlod:iron_deficiency_anemia ;
               pgxo:isCausedBy pgxlod:thiopurine ,
                               pgxlod:TPMT_very_high_activity .
@@ -314,7 +316,8 @@ pgxlod:anthracycline rdf:type pgxo:Drug ,
 ###  http://ns.inria.fr/pgxlod/resource/b_pr_1
 pgxlod:b_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:b_ramirez_analysis_1 ;
-              pgxo:pValue "1.4 10^-11" ;
+              pgxo:pValue 1.4e-11 ;
+              prov:wasDerivedFrom pubmed:22329724 ;
               pgxo:causes pgxlod:warfarin_reduced_dose_requirement ;
               pgxo:isCausedBy clinpgx:PA165816543 ,
                               clinpgx:PA451906 .
@@ -338,16 +341,18 @@ pgxlod:bleeding rdf:type pgxo:Phenotype ,
                 rdfs:label "bleeding" .
 
 
-###  http://ns.inria.fr/pgxlod/resource/c_delanay_analysis_1
-pgxlod:c_delanay_analysis_1 rdf:type prov:Activity ;
+###  http://ns.inria.fr/pgxlod/resource/c_delaney_analysis_1
+pgxlod:c_delaney_analysis_1 rdf:type prov:Activity ;
                             prov:used pgxlod:biovu ;
                             prov:wasAssociatedWith pgxlod:linear_regression .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/c_pr_1
 pgxlod:c_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
-              prov:wasGeneratedBy pgxlod:c_delanay_analysis_1 ;
-              pgxo:hazardRatio "1.54 (95%)" ;
+              prov:wasGeneratedBy pgxlod:c_delaney_analysis_1 ;
+              pgxo:hazardRatio 1.54 ;
+              pgxo:pValue 0.003 ;
+              prov:wasDerivedFrom pubmed:22190063 ;
               pgxo:causes pgxlod:stent_thrombosis ;
               pgxo:isCausedBy clinpgx:PA165980635 ,
                               clinpgx:PA449053 .
@@ -377,7 +382,8 @@ pgxlod:d_birdwell_analysis_1 rdf:type prov:Activity ;
 ###  http://ns.inria.fr/pgxlod/resource/d_pr_1
 pgxlod:d_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:d_birdwell_analysis_1 ;
-              pgxo:pValue "7.15 10^-29" ;
+              pgxo:pValue 7.15e-29 ;
+              prov:wasDerivedFrom pubmed:22108237 ;
               pgxo:causes pgxlod:tacrolimus_blood_concentration-to-dose_ratio ;
               pgxo:isCausedBy dbsnp:rs776746 ,
                               clinpgx:PA451578 .
@@ -386,8 +392,9 @@ pgxlod:d_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/e_pr_1
 pgxlod:e_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1e_mosley_analysis_1 ;
-              pgxo:pValue "1 A10^-8" ;
-              pgxo:oddsRatio "1.3 (95%)" ;
+              pgxo:pValue 1.0e-8 ;
+              pgxo:oddsRatio 1.3 ;
+              prov:wasDerivedFrom pubmed:26169577 ;
               pgxo:causes pgxlod:cough ;
               pgxo:isCausedBy dbsnp:rs145489027 ,
                               pgxlod:acei .
@@ -400,7 +407,8 @@ pgxlod:emerge_network rdf:type prov:Organization .
 ###  http://ns.inria.fr/pgxlod/resource/f_pr_1
 pgxlod:f_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1f_driest_analysis_1 ;
-              pgxo:pValue "1.1 10^-7" ;
+              pgxo:pValue 1.1e-7 ;
+              prov:wasDerivedFrom pubmed:26030142 ;
               pgxo:causes pgxlod:serum_creatinine_level ;
               pgxo:isCausedBy dbsnp:rs2789047 ,
                               clinpgx:PA451850 .
@@ -409,7 +417,8 @@ pgxlod:f_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/g_pr_1
 pgxlod:g_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1g_wells_analysis_1 ;
-              pgxo:pValue "1 10^-5" ;
+              pgxo:pValue 5.9e-6 ;
+              prov:wasDerivedFrom pubmed:28542097 ;
               pgxo:causes pgxlod:maximal_change_in_lvef ;
               pgxo:isCausedBy dbsnp:rs7542939 ,
                               pgxlod:anthracycline .
@@ -418,7 +427,8 @@ pgxlod:g_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/h_pr_1
 pgxlod:h_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1h_kawai_analysis_1 ;
-              pgxo:oddsRatio "2.05 (95%)" ;
+              pgxo:oddsRatio 2.05 ;
+              prov:wasDerivedFrom pubmed:25521356 ;
               pgxo:causes pgxlod:bleeding ;
               pgxo:isCausedBy clinpgx:PA165816544 ,
                               clinpgx:PA451906 .
@@ -437,6 +447,7 @@ pgxlod:hopital_europeen_georges_pompidou rdf:type prov:Organization .
 pgxlod:i_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1i_feng_analysis_1 ;
               pgxo:pValue 0.002 ;
+              prov:wasDerivedFrom pubmed:26902539 ;
               pgxo:causes pgxlod:ldl_chloesterol_response ;
               pgxo:isCausedBy dbsnp:rs11591147 ,
                               pgxlod:statin .
@@ -445,8 +456,9 @@ pgxlod:i_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
 ###  http://ns.inria.fr/pgxlod/resource/j_pr_1
 pgxlod:j_pr_1 rdf:type pgxo:PharmacogenomicRelationship ;
               prov:wasGeneratedBy pgxlod:1j_karnes_analysis_1 ;
-              pgxo:pValue "3.18 10^-9" ;
+              pgxo:pValue 3.18e-9 ;
               pgxo:oddsRatio 18.52 ;
+              prov:wasDerivedFrom pubmed:25503805 ;
               pgxo:causes pgxlod:thrombocytopenia ;
               pgxo:isCausedBy dbsnp:rs10782473 ,
                               clinpgx:PA449855 .
@@ -516,3 +528,57 @@ pgxlod:iron_deficiency_anemia rdf:type pgxo:Phenotype ,
                               pgxo:isCausedBy pgxlod:a_pr_1 ;
                               rdfs:label "iron deficiency anemia" .
 
+
+###  http://ns.inria.fr/pgxlod/resource/PubMed
+pgxlod:PubMed rdf:type prov:Entity ;
+              rdfs:label "PubMed" .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/22190063
+pubmed:22190063 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/22108237
+pubmed:22108237 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/22329724
+pubmed:22329724 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/24385893
+pubmed:24385893 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/25503805
+pubmed:25503805 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/25521356
+pubmed:25521356 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/26030142
+pubmed:26030142 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/26169577
+pubmed:26169577 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/26902539
+pubmed:26902539 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
+
+
+###  http://rdf.ncbi.nlm.nih.gov/pubmed/28542097
+pubmed:28542097 rdf:type prov:Entity ;
+                prov:wasDerivedFrom pgxlod:PubMed .
