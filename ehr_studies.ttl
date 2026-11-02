@@ -290,7 +290,7 @@ pgxlod:1j_karnes_analysis_1 rdf:type prov:Activity ;
 ###  http://ns.inria.fr/pgxlod/resource/TPMT_very_high_activity
 pgxlod:TPMT_very_high_activity rdf:type pgxo:Phenotype ;
                                pgxo:qualifiedProxy pgxlod:_1a_proxy ;
-                               ro:RO_0002502 clinpgx:PA165819268 ;
+                               ro:RO_0002502 clinpgx:PA356 ;
                                pgxo:causes pgxlod:a_pr_1 ;
                                rdfs:label "TPMT very high activity" .
 
@@ -305,7 +305,8 @@ pgxlod:_1a_activity_neuraz rdf:type prov:Generation ;
 ###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
 pgxlod:_1a_proxy rdf:type prov:Entity ;
                  pgxo:qualifiedVariation clinpgx:PA165819268 ;
-                 prov:qualifiedGeneration pgxlod:_1a_proxy_activity .
+                 prov:qualifiedGeneration pgxlod:_1a_proxy_activity ;
+                 rdfs:comment "Approximation: TPMT*1 (normal function) is the closest CPIC genotype; CPIC defines no genotype for very high TPMT activity." .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/_1a_proxy_activity
