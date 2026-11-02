@@ -305,14 +305,8 @@ pgxlod:_1a_activity_neuraz rdf:type prov:Generation ;
 ###  http://ns.inria.fr/pgxlod/resource/_1a_proxy
 pgxlod:_1a_proxy rdf:type prov:Entity ;
                  pgxo:qualifiedVariation clinpgx:PA165819268 ;
-                 prov:qualifiedGeneration pgxlod:_1a_proxy_activity ;
+                 prov:wasGeneratedBy pgxlod:a_proxy_manual_extraction ;
                  rdfs:comment "Approximation: TPMT*1 (normal function) is the closest CPIC genotype; CPIC defines no genotype for very high TPMT activity." .
-
-
-###  http://ns.inria.fr/pgxlod/resource/_1a_proxy_activity
-pgxlod:_1a_proxy_activity rdf:type prov:Generation ;
-                          prov:activity pgxlod:a_proxy_manual_extraction ;
-                          prov:influencer pgxlod:thiopurine_cpic_clinical_guidelines .
 
 
 ###  http://ns.inria.fr/pgxlod/resource/_1a_quality
