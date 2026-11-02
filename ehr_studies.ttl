@@ -34,11 +34,6 @@ loinc:LP32035-5 rdf:type owl:Class ;
                 rdfs:label "Creatinine" .
 
 
-###  http://purl.bioontology.org/ontology/MESH/C017065
-mesh:C017065 rdf:type owl:Class ;
-             rdfs:label "beromycin, anthracycline" .
-
-
 ###  http://purl.bioontology.org/ontology/MESH/D003371
 mesh:D003371 rdf:type owl:Class ;
              rdfs:label "cough" .
@@ -57,6 +52,11 @@ mesh:D013921 rdf:type owl:Class ;
 ###  http://purl.bioontology.org/ontology/MESH/D013927
 mesh:D013927 rdf:type owl:Class ;
              rdfs:label "thrombosis" .
+
+
+###  http://purl.bioontology.org/ontology/MESH/D018943
+mesh:D018943 rdf:type owl:Class ;
+             rdfs:label "Anthracyclines" .
 
 
 ###  http://purl.bioontology.org/ontology/UATC/C09A
@@ -482,7 +482,7 @@ pgxlod:acei rdf:type pgxo:Drug ,
 
 ###  http://ns.inria.fr/pgxlod/resource/anthracycline
 pgxlod:anthracycline rdf:type pgxo:Drug ,
-                              mesh:C017065 ;
+                              mesh:D018943 ;
                      pgxo:causes pgxlod:g_pr_1 .
 
 
