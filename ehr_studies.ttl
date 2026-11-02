@@ -448,7 +448,7 @@ pgxlod:ehr_studies_v2_relation_9 rdf:type pgxo:PharmacogenomicRelationship ;
                                  prov:wasGeneratedBy pgxlod:ehr_studies_v2_analysis_9 ;
                                  pgxo:pValue 0.002 ;
                                  prov:wasDerivedFrom pubmed:26902539 ;
-                                 pgxo:causes pgxlod:ldl_chloesterol_response ;
+                                 pgxo:causes pgxlod:ldl_cholesterol_response ;
                                  pgxo:isCausedBy dbsnp:rs11591147 ,
                                                  pgxlod:statin .
 
@@ -464,8 +464,8 @@ pgxlod:ehr_studies_v2_relation_10 rdf:type pgxo:PharmacogenomicRelationship ;
                                                   clinpgx:PA449855 .
 
 
-###  http://ns.inria.fr/pgxlod/resource/ldl_chloesterol_response
-pgxlod:ldl_chloesterol_response rdf:type pgxo:Phenotype ,
+###  http://ns.inria.fr/pgxlod/resource/ldl_cholesterol_response
+pgxlod:ldl_cholesterol_response rdf:type pgxo:Phenotype ,
                                          loinc:13457-7 ;
                                 pgxo:isCausedBy pgxlod:ehr_studies_v2_relation_9 .
 
