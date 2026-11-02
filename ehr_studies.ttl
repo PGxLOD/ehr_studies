@@ -103,7 +103,6 @@ dbsnp:rs2789047 rdf:type pgxo:Variant ;
 
 ###  http://bio2rdf.org/dbSNP:rs7542939
 dbsnp:rs7542939 rdf:type pgxo:Variant ;
-                ro:BFO_0000050 clinpgx:PA33715 ;
                 pgxo:causes pgxlod:g_pr_1 .
 
 
@@ -169,12 +168,6 @@ clinpgx:PA165816544 rdf:type pgxo:Haplotype ;
 clinpgx:PA28685 rdf:type pgxo:Gene ;
                 ro:BFO_0000051 dbsnp:rs2789047 ;
                 rdfs:label "GJA1" .
-
-
-###  http://bio2rdf.org/clinpgx:PA33715
-clinpgx:PA33715 rdf:type pgxo:Gene ;
-                ro:BFO_0000051 dbsnp:rs7542939 ;
-                rdfs:label "PRDM2" .
 
 
 ###  http://bio2rdf.org/clinpgx:PA356
